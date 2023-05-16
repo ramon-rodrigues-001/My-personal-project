@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  font-size: 0.8em;
+  color: #d53ffe;
+  z-index: 999;
+}
+#header #nav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  width: 100vw;
+  height: 50px;
+}
+#header #nav h1 {
+  font-size: 2em;
+  padding: 0px 20px;
+}
+#header #nav #icon-carrinho {
+  position: absolute;
+  right: 50px;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+#header #extensao_nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgb(24, 24, 24);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.605);
+  border: solid 2px #d43efe;
+  border-radius: 0px 0px 30px 30px;
+  overflow: hidden;
+  padding: 0px 10px;
+  transition: height 0.5s ease;
+}
+#header #extensao_nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  list-style: none;
+  width: 100%;
+}
+#header #extensao_nav.ativo {
+  height: 60px;
+}
+#header #extensao_nav.passivo {
+  transition: height 1s ease;
+  height: 0px;
+}
+
+#apresentacao {
+  background: black url(../src/assets/rosas-ia.jpg) top center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 0.9em;
+  position: relative;
+  padding: 10px 20px;
+  height: 50vh;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#apresentacao p {
+  font-weight: bold;
+  max-width: 450px;
+}
+#apresentacao button {
+  background-color: black;
+  color: #d53ffe;
+  border: solid 3px #d53ffe;
+  position: absolute;
+  bottom: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transform: skew(-21deg);
+  min-width: 250px;
+  max-width: 450px;
+}
+#apresentacao button::before {
+  content: "";
+  background-color: #d53ffe;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 100%;
+  transition: 0.5s ease;
+}
+#apresentacao button:hover {
+  color: rgb(0, 0, 0);
+}
+#apresentacao button:hover::before {
+  z-index: -1;
+  width: 100%;
+}
+
+#CardsFlutuante {
+  font-size: 0.8em;
+  background-color: black;
+  color: white;
+  height: 42vh;
+  padding: 10px 20px;
+}
+#CardsFlutuante .cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#CardsFlutuante .cards #text-card {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#CardsFlutuante #img-check {
+  width: 150px;
+}
+
+#destaque {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

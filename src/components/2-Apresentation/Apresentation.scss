@@ -1,0 +1,54 @@
+#apresentacao {
+    background: black url(../src/assets/rosas-ia.jpg) top center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-size: .9em;
+    position: relative;
+    padding: 10px 20px;
+    height: 50vh;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-weight: bold;
+        max-width: 450px;
+    }
+
+    button {
+        background-color: black;
+        color: #d53ffe;
+        border: solid 3px #d53ffe;
+        position: absolute;
+        bottom: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        transform: skew(-21deg);
+        min-width: 250px;
+        max-width: 450px;
+
+        &::before {
+            content: '';
+            background-color: #d53ffe;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            width: 0px;
+            height: 100%;
+
+            transition: .5s ease;
+        }
+
+        &:hover {
+            color: rgb(0, 0, 0);
+        }
+        &:hover::before {
+            z-index: -1;
+            width: 100%;
+        }
+    }
+}
