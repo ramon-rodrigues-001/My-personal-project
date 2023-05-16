@@ -1,0 +1,22 @@
+#CardsFlutuante {
+    font-size: .8em;
+    background-color: black;
+    color: white;
+    height: 42vh;
+    padding: 10px 20px;
+
+    .cards {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        #text-card {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+
+    #img-check {
+        width: 150px;
+    }
+}
