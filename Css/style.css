@@ -111,19 +111,20 @@
 
 #CardsFlutuante {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   gap: 20px;
   font-size: 0.8em;
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   min-height: 42vh;
 }
 #CardsFlutuante .cards {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px 20px;
+  gap: 20px;
   text-align: center;
 }
 #CardsFlutuante .cards #text-card {
@@ -135,6 +136,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  #CardsFlutuante {
+    flex-direction: row;
+  }
   #CardsFlutuante .cards {
     flex-direction: column;
   }
