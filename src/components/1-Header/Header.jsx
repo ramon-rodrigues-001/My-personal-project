@@ -27,7 +27,7 @@ export default class Header extends Component {
                     <nav id='nav'>
                         <h1>Flor De Liz</h1>
                         <button id='icon-carrinho'>
-                            <i class="bi bi-cart4"></i>
+                            <i className="bi bi-cart4"></i>
                         </button>
                     </nav>
                     <div id='extensao_nav' className='ativo'>
@@ -47,7 +47,7 @@ export default class Header extends Component {
                     <nav id='nav'>
                         <h1>Liz</h1>
                         <button id='icon-carrinho'>
-                            <i class="bi bi-cart4"></i>
+                            <i className="bi bi-cart4"></i>
                         </button>
                     </nav>
                     <div id='extensao_nav' className='passivo'>

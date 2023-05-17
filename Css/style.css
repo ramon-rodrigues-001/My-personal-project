@@ -110,25 +110,35 @@
 }
 
 #CardsFlutuante {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
   font-size: 0.8em;
   background-color: black;
   color: white;
-  height: 42vh;
-  padding: 10px 20px;
+  padding: 20px;
+  min-height: 42vh;
 }
 #CardsFlutuante .cards {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px 20px;
+  text-align: center;
 }
 #CardsFlutuante .cards #text-card {
   font-size: 1.2em;
   font-weight: bold;
 }
 #CardsFlutuante #img-check {
-  width: 150px;
+  width: 100px;
 }
 
+@media screen and (min-width: 600px) {
+  #CardsFlutuante .cards {
+    flex-direction: column;
+  }
+}
 #destaque {
   height: 100vh;
 }
