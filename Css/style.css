@@ -144,7 +144,73 @@
   }
 }
 #destaque {
-  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+#destaque #text-destaques {
+  margin: auto;
+  max-width: 900px;
+  padding: 30px 20px;
+}
+#destaque #cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#destaque #cards #card-vaso-destaque {
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+  border: solid 3px #d53ffe;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 310px;
+  max-height: 200px;
+  height: auto;
+}
+#destaque #cards #card-vaso-destaque h3 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+#destaque #cards #card-vaso-destaque #img-vaso-destaque {
+  width: 100%;
+}
+#destaque #cards #card-vaso-destaque #comprar {
+  background-color: black;
+  color: #d53ffe;
+  border: solid 3px #d53ffe;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  font-weight: bold;
+  padding: 10px 20px;
+  transform: skew(-21deg) translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+}
+#destaque #cards #card-vaso-destaque #comprar::before {
+  content: "";
+  background-color: #d53ffe;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 100%;
+  transition: 0.5s ease;
+}
+#destaque #cards #card-vaso-destaque #comprar:hover {
+  color: rgb(0, 0, 0);
+}
+#destaque #cards #card-vaso-destaque #comprar:hover::before {
+  z-index: -1;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,9 @@ function App() {
       <Header />
       <Apresentation />
       <CardsFlutuante />
-      <Destaque />
+      <Destaque 
+        link={["/src/assets/vaso-de-rosa-venda-1.jpg", "/src/assets/vaso-de-rosa-venda-1.jpg", "/src/assets/vaso-de-rosa-venda-1.jpg"]}
+      />
     </Fragment>
   )
 }
