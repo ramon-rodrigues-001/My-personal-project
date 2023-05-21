@@ -40,6 +40,12 @@
             #img-vaso-destaque {
                 width: 100%;
             }
+
+            .ribbons {
+                position: absolute;
+                background-color: red;
+                z-index: 999;
+            }
     
     
             // Estilo e animação do botão comprar

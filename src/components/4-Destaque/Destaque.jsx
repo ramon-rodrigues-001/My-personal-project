@@ -17,6 +17,7 @@ export default function Destaque(props) {
                         <div id='card-vaso-destaque'>
                             <h3>EM DESTAQUE</h3>
                             <img src={index} alt="Destaque" id='img-vaso-destaque' />
+                            <img src="/src/assets/ribbons.png" alt="Ribbon" className='ribbons'/>
                             <button id='comprar' className='destaque'>Ver Produto</button>
                         </div>
                     )

@@ -181,6 +181,11 @@
 #destaque #cards #card-vaso-destaque #img-vaso-destaque {
   width: 100%;
 }
+#destaque #cards #card-vaso-destaque .ribbons {
+  position: absolute;
+  background-color: red;
+  z-index: 999;
+}
 #destaque #cards #card-vaso-destaque #comprar {
   background-color: black;
   color: #d53ffe;
