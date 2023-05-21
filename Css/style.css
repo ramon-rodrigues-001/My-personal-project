@@ -167,6 +167,7 @@
   color: #000000;
   border: solid 3px #d53ffe;
   border-radius: 15px;
+  box-shadow: 0.1px 0.1px 10px 0.1px #d53ffe;
   width: 90%;
   max-width: 310px;
   max-height: 200px;
@@ -177,14 +178,18 @@
   top: 10px;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 #destaque #cards #card-vaso-destaque #img-vaso-destaque {
   width: 100%;
 }
 #destaque #cards #card-vaso-destaque .ribbons {
   position: absolute;
-  background-color: red;
-  z-index: 999;
+  right: -12px;
+  top: 0;
+  transform: rotate(30deg);
+  width: 80px;
+  z-index: 1;
 }
 #destaque #cards #card-vaso-destaque #comprar {
   background-color: black;

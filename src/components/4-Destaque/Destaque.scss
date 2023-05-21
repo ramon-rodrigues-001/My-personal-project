@@ -25,6 +25,7 @@
             color: #000000;
             border: solid 3px #d53ffe;
             border-radius: 15px;
+            box-shadow: .1px .1px 10px .1px #d53ffe;
             width: 90%;
             max-width: 310px;
             max-height: 200px;
@@ -35,6 +36,7 @@
                 top: 10px;
                 width: 100%;
                 text-align: center;
+                z-index: 2;
             }
     
             #img-vaso-destaque {
@@ -43,8 +45,15 @@
 
             .ribbons {
                 position: absolute;
-                background-color: red;
-                z-index: 999;
+                right: -12px;
+                top: 0;
+                transform: rotate(30deg);
+                width: 80px;
+                z-index: 1;
+
+                &:hover {
+                    
+                }
             }
     
     
