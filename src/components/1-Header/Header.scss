@@ -31,41 +31,50 @@
 
 
         // ======= Estilizando o menu lateral =======
-        #menu {
+        #menu{
             padding: 0;
             background-color: transparent;
             border: 20px solid transparent;
             border-left: 30px solid #d53ffe;
         }
-        
+
         #leftMenu {
-            top: 0;
-            background-color: #d53ffe;
-            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(26, 26, 26);
             position: fixed;
-            height: 100vh;
-            left: -300px;
-            transition: all 0.1s linear;
-            padding: 100px 0;
-            z-index: 1;
-        }
-        
-        #leftMenu a {
-            font-family: arial black;
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 5px 10px;
-        }
-        
-        #closeMenu {
-            padding: 0;
-            border: 20px solid #d53ffe;
-            border-right: 30px solid white;
-            position: absolute;
-            right: 0;
             top: 0;
-            margin: 10px;
+            left: -300px;
+            padding: 100px 10px;
+            width: 300px;
+            height: 100vh;
+            transition: all 0.1s linear;
+            z-index: 1;
+
+            #logo-menu-lateral {
+                position: absolute;
+                top: 15px;
+            }
+
+            a {
+                font-family: arial rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                display: block;
+                padding: 5px 10px;
+            }
+
+            #closeMenu {
+                padding: 0;
+                background-color: transparent;
+                border: 20px solid transparent;
+                border-right: 30px solid #d53ffe;
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: 10px;
+            }
         }
         // ======= / Fim do estilo menu lateral =======
     }

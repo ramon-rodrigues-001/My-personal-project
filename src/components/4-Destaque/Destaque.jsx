@@ -22,6 +22,7 @@ export default function Destaque(props) {
                             <img src="/src/assets/ribbons.png" alt="Ribbon" className='ribbons'/>
                             <button id='comprar' className='destaque'>Ver Produto</button>
                         </div>
+                        
                     )
                 })}
             </div>
