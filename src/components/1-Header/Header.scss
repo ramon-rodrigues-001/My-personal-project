@@ -28,8 +28,50 @@
             cursor: pointer;
             border: none;
         }
+
+
+        // ======= Estilizando o menu lateral =======
+        #menu {
+            padding: 0;
+            background-color: transparent;
+            border: 20px solid transparent;
+            border-left: 30px solid #d53ffe;
+        }
+        
+        #leftMenu {
+            top: 0;
+            background-color: #d53ffe;
+            width: 300px;
+            position: fixed;
+            height: 100vh;
+            left: -300px;
+            transition: all 0.1s linear;
+            padding: 100px 0;
+            z-index: 1;
+        }
+        
+        #leftMenu a {
+            font-family: arial black;
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5px 10px;
+        }
+        
+        #closeMenu {
+            padding: 0;
+            border: 20px solid #d53ffe;
+            border-right: 30px solid white;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 10px;
+        }
+        // ======= / Fim do estilo menu lateral =======
     }
 
+
+    // ======= Estilizando a extenção do header ======= 
     #extensao_nav {
         display: flex;
         align-items: center;
@@ -59,4 +101,5 @@
             height: 0px;
         }
     }
+    // ======= Fim do estilo extenção do header ======= 
 }

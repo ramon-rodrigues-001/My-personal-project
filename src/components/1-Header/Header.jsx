@@ -8,6 +8,9 @@ export default class Header extends Component {
         }
     }
 
+
+
+
     functionScroll = ()=> {
         const scroll = document.documentElement.scrollTop
 
@@ -16,9 +19,49 @@ export default class Header extends Component {
         }))
     }
 
+
+
+
     chamarScroll = window.onscroll = ()=> {
         scroll = this.functionScroll()
     }
+
+
+
+
+    chamarMenuLateral = () => {
+        alert('o')
+        link = document.getElementsByTagName('a');
+        video = document.getElementsByTagName('video');
+        document.addEventListener('click', () => {
+            for (i in link) {
+            if (link[i] == event.target) {
+                leftMenu.style.left = "-300px";
+                menu.style.zIndex = '1';
+            }
+            }
+        });
+        document.addEventListener('play', () => {
+            for (i in video) {
+            if (video[i] == event.target) {
+                video[i].play();
+            } else {
+                video[i].pause();
+            }
+            }
+        }, true);
+        menu.onclick = () => {
+            leftMenu.style.left = "0px";
+            menu.style.zIndex = '-1';
+        };
+        closeMenu.onclick = () => {
+            leftMenu.style.left = "-300px";
+            menu.style.zIndex = '1';
+        };
+    }
+
+
+
 
     render() {
         if (this.state.Scroll < .5) {
@@ -32,7 +75,7 @@ export default class Header extends Component {
                     </nav>
                     <div id='extensao_nav' className='ativo'>
                         <ul>
-                            <li>HOME</li>
+                            <li>CATEGORIA</li>
                             <li>FLORES</li>
                             <li>LOCALIDADE</li>
                             <li>CONTATOS</li>
@@ -49,6 +92,15 @@ export default class Header extends Component {
                         <button id='icon-carrinho'>
                             <i className="bi bi-cart4"></i>
                         </button>
+
+                        <div id='leftMenu'>
+                            <button id='closeMenu'></button>
+                            <a href='#content'>Content</a>
+                            <a href='#photo'>Photo Gallery</a>
+                            <a href='#video'>Video Gallery</a>
+                        </div>
+
+                        <button id='menu' onClick={()=>{this.chamarMenuLateral}}></button>
                     </nav>
                     <div id='extensao_nav' className='passivo'>
                         
@@ -58,3 +110,15 @@ export default class Header extends Component {
         }
     }
 }
+
+
+
+// CSS==================
+
+
+
+// HTML==================
+
+
+
+// SCRIPT========================

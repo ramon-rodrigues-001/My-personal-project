@@ -5,6 +5,41 @@
   padding: 0;
 }
 
+@keyframes animation-icone-voltar {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#icone {
+  position: fixed;
+  right: 4%;
+  bottom: 20px;
+  z-index: 9;
+}
+#icone button {
+  background-color: transparent;
+  border: none;
+}
+#icone button #icon-voltar-ao-topo {
+  animation: animation-icone-voltar 3s linear infinite;
+  width: 50px;
+}
+#icone button #icon-voltar-ao-topo:hover {
+  opacity: 1;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -32,6 +67,39 @@
   color: white;
   cursor: pointer;
   border: none;
+}
+#header #nav #menu {
+  padding: 0;
+  background-color: transparent;
+  border: 20px solid transparent;
+  border-left: 30px solid #d53ffe;
+}
+#header #nav #leftMenu {
+  top: 0;
+  background-color: #d53ffe;
+  width: 300px;
+  position: fixed;
+  height: 100vh;
+  left: -300px;
+  transition: all 0.1s linear;
+  padding: 100px 0;
+  z-index: 1;
+}
+#header #nav #leftMenu a {
+  font-family: arial black;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+#header #nav #closeMenu {
+  padding: 0;
+  border: 20px solid #d53ffe;
+  border-right: 30px solid white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
 }
 #header #extensao_nav {
   display: flex;

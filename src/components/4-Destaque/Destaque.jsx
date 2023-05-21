@@ -8,7 +8,9 @@ export default function Destaque(props) {
             
             <div id='text-destaques'>
                 <h2>Destaques para o dia das mães</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium distinctio illo qui similique dolorum ducimus at velit, assumenda obcaecati quisquam quo cum molestias quibusdam. Quo repudiandae dicta aspernatur sit.</p>
+                <p>
+                    Surpreenda sua mãe no Dia das Mães com a delicadeza e beleza das rosas,
+                    Nossas rosas para o Dia das Mães são cuidadosamente cultivadas, selecionadas e entregues frescas, garantindo a máxima qualidade e durabilidade.</p>
             </div>
 
             <div id='cards'>
