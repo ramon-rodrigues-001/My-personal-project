@@ -92,12 +92,24 @@
   position: absolute;
   top: 15px;
 }
-#header #nav #leftMenu a {
-  font-family: arial rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  display: block;
+#header #nav #leftMenu .btn-menu-lateral {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
   padding: 5px 10px;
+  transition: 0.3s;
+  text-align: left;
+}
+#header #nav #leftMenu .btn-menu-lateral a {
+  background-color: transparent;
+  font-family: arial rgb(0, 0, 0);
+  color: #d53ffe;
+  text-decoration: none;
+}
+#header #nav #leftMenu .btn-menu-lateral:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 0.6s;
 }
 #header #nav #leftMenu #closeMenu {
   padding: 0;
@@ -238,6 +250,8 @@
   flex-wrap: wrap;
 }
 #destaque #cards #card-vaso-destaque {
+  background: url(/src/assets/vaso-de-rosa-venda-1.jpg) center top no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   color: #000000;
@@ -245,8 +259,8 @@
   border-radius: 15px;
   box-shadow: 0.1px 0.1px 10px 0.1px #d53ffe;
   width: 90%;
-  max-width: 310px;
-  max-height: 200px;
+  max-width: 400px;
+  min-height: 200px;
   height: auto;
 }
 #destaque #cards #card-vaso-destaque h3 {
@@ -274,11 +288,12 @@
   position: absolute;
   bottom: 15px;
   left: 50%;
+  letter-spacing: 1.2px;
   font-weight: bold;
   padding: 10px 20px;
   transform: skew(-21deg) translateX(-50%);
   width: 90%;
-  max-width: 400px;
+  max-width: 300px;
 }
 #destaque #cards #card-vaso-destaque #comprar::before {
   content: "";
@@ -292,7 +307,11 @@
   transition: 0.5s ease;
 }
 #destaque #cards #card-vaso-destaque #comprar:hover {
+  letter-spacing: 2px;
+  font-size: 1em;
   color: rgb(0, 0, 0);
+  border-color: #000000;
+  transition: 0.3s ease;
 }
 #destaque #cards #card-vaso-destaque #comprar:hover::before {
   z-index: -1;

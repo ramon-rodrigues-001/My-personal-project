@@ -10,11 +10,8 @@ export default function Destaque(props) {
                 <h2>Destaques para o dia das mães</h2>
                 <p>
                     Surpreenda sua mãe no Dia das Mães com a delicadeza e beleza das rosas,
-                    Nossas rosas para o Dia das Mães são cuidadosamente cultivadas, selecionadas e entregues frescas, garantindo a máxima qualidade e durabilidade.
+                    Nossas rosas para o Dia das Mães são cuidadosamente cultivadas, selecionadas e frescas, garantindo a máxima qualidade.
                 </p>
-                <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    Tooltip on top
-                </button>
             </div>
 
             <div id='cards'>
@@ -22,7 +19,7 @@ export default function Destaque(props) {
                     return(
                         <div id='card-vaso-destaque'>
                             <h3>EM DESTAQUE</h3>
-                            <img src={index} alt="Destaque" id='img-vaso-destaque' />
+                            {/* <img src={index} alt="Destaque" id='img-vaso-destaque' /> */}
                             <img src="/src/assets/ribbons.png" alt="Ribbon" className='ribbons'/>
                             <button id='comprar' className='destaque'>Ver Produto</button>
                         </div>

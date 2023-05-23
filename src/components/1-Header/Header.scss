@@ -57,13 +57,29 @@
                 top: 15px;
             }
 
-            a {
-                font-family: arial rgb(0, 0, 0);
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-                display: block;
+            .btn-menu-lateral {
+                font-size: 1.5em;
+                font-weight: bold;
+                border: none;
+                background-color: transparent;
                 padding: 5px 10px;
+                transition: .3s;
+                text-align: left;
+
+                a {
+                    background-color: transparent;
+                    font-family: arial rgb(0, 0, 0);
+                    color: #d53ffe;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: rgb(0, 0, 0);
+                    transition: .6s;
+                }
             }
+
+            
 
             #closeMenu {
                 padding: 0;

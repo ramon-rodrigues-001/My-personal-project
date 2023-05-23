@@ -93,10 +93,18 @@ export default class Header extends Component {
                         <div id='leftMenu'>
                             <h1 id='logo-menu-lateral'>Flor De Liz</h1>
                             <button id='closeMenu'></button>
-                            <button><a href="#">CATEGORIA</a></button>
-                            <button><a href="#">FLORES</a></button>
-                            <button><a href="#">LOCALIDADE</a></button>
-                            <button><a href="#">CONTATOS</a></button>
+                            <button className='btn-menu-lateral'>
+                                <a href="#">CATEGORIA</a>
+                            </button>
+                            <button className='btn-menu-lateral'>
+                                <a href="#">FLORES</a>
+                            </button>
+                            <button className='btn-menu-lateral'>
+                                <a href="#">LOCALIDADE</a>
+                            </button>
+                            <button className='btn-menu-lateral'>
+                                <a href="#">CONTATOS</a>
+                            </button>
                         </div>
 
                         <button id='menu' onClick={()=>{this.chamarMenuLateral()}}></button>

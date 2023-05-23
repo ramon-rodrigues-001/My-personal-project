@@ -20,6 +20,8 @@
         flex-wrap: wrap;
     
         #card-vaso-destaque {
+            background: url(/src/assets/vaso-de-rosa-venda-1.jpg) center top no-repeat;
+            background-size: cover;
             position: relative;
             overflow: hidden;
             color: #000000;
@@ -27,8 +29,9 @@
             border-radius: 15px;
             box-shadow: .1px .1px 10px .1px #d53ffe;
             width: 90%;
-            max-width: 310px;
-            max-height: 200px;
+            max-width: 400px;
+            min-height: 200px;
+            // max-height: 150px;
             height: auto;
     
             h3 {
@@ -65,11 +68,12 @@
                 position: absolute;
                 bottom: 15px;
                 left: 50%;
+                letter-spacing: 1.2px;
                 font-weight: bold;
                 padding: 10px 20px;
                 transform: skew(-21deg) translateX(-50%);
                 width: 90%;
-                max-width: 400px;
+                max-width: 300px;
         
                 &::before {
                     content: '';
@@ -86,7 +90,11 @@
                 }
         
                 &:hover {
+                    letter-spacing: 2px;
+                    font-size: 1em;
                     color: rgb(0, 0, 0);
+                    border-color: #000000;
+                    transition: .3s ease;
                 }
                 &:hover::before {
                     z-index: -1;
