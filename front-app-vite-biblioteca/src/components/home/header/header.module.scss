@@ -1,0 +1,49 @@
+@import "../../../styles/colors.module.scss";
+
+.ctaSection {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.h {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1000px;
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .list {
+        list-style: none;
+        font-weight: bold;
+        display: flex;
+        gap: 10px;
+    }
+
+    .btnNav {
+        background-color: transparent;
+        font-weight: bold;
+        color: $lightGray;
+        border: solid 2px transparent;
+        padding: 5px 20px;
+        border-radius: 4px;
+        margin: 5px;
+        transition: .3s;
+
+        &:hover {
+            border-color: $lightRed;
+            color: white;
+            transition: .1s;
+        }
+    }
+}

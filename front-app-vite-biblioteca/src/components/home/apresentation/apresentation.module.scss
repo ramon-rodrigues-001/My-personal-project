@@ -1,0 +1,56 @@
+@import "../../../styles/colors.module.scss";
+
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 300px;
+    margin: 0px auto;
+
+    .subtitle {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $lightRed;
+    }
+
+    .title {
+        font-size: 3em;
+        padding: 10px 0px 15px 0px;
+    }
+
+    .descrition {
+        color: $lightGray;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .linkBtnPlay {
+        text-decoration: none;
+        margin-top: 20px;
+
+        .buttonPlay {
+            color: $lightRed;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: transparent;
+            border: solid 1px $lightGray;
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
+    
+            .imgPlay {
+                width: 20px;
+            }
+
+            &:hover {
+
+            }
+        }
+    }
+}

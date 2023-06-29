@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sectionBackground {
+    background-image: linear-gradient(to bottom, #2a2828af, #151515), url(/public/Cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
