@@ -7,7 +7,7 @@
     color: white;
     width: 90%;
     max-width: 1000px;
-    min-height: 300px;
+    min-height: 400px;
     margin: 0px auto;
 
     .subtitle {
@@ -43,13 +43,15 @@
             padding: 8px 15px;
             border-radius: 5px;
             box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
+            transition: .3s;
     
             .imgPlay {
                 width: 20px;
             }
 
             &:hover {
-
+                border-color: $lightRed;
+                box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.305);
             }
         }
     }

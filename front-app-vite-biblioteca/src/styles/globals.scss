@@ -1,3 +1,5 @@
+@import "./colors.module.scss";
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,4 +13,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #151515;
+}
+::-webkit-scrollbar-track {
+    background-color: #151515;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $lightRed;
+    border-radius: 40px;
 }

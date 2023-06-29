@@ -13,6 +13,8 @@ function App() {
         <Header />
         <Apresentation />
       </section>
+      
+      <Apresentation />
     </Fragment>
   )
 }

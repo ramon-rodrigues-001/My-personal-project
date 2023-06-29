@@ -1,5 +1,4 @@
-import { Fragment } from "react"
-import styles from "./apresentation.module.scss"
+import styles from "./apresentation.module.scss";
 
 export default function Apresentation() {
     return (
