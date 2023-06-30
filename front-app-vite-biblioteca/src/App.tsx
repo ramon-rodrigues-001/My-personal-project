@@ -3,6 +3,7 @@ import { Fragment } from "react"
 import "./styles/globals.scss"
 import Header from "./components/home/header/header"
 import Apresentation from "./components/home/apresentation/apresentation"
+import Mission from "./components/mission/mission"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -13,8 +14,9 @@ function App() {
         <Header />
         <Apresentation />
       </section>
-      
-      <Apresentation />
+      <section className="main">
+        <Mission />
+      </section>
     </Fragment>
   )
 }

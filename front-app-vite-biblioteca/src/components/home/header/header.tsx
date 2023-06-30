@@ -16,10 +16,26 @@ export default function Header() {
                 </h1>
                 <div>
                     <ul className={styles.list}>
-                        <li>Option1</li>
-                        <li>Option1</li>
-                        <li>Option1</li>
-                        <li>Option1</li>
+                        <li>
+                            <a href="/">
+                                Missão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Valores
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Projetos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Contatos
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div>

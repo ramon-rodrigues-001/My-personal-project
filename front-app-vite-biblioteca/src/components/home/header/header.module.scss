@@ -27,7 +27,16 @@
         list-style: none;
         font-weight: bold;
         display: flex;
-        gap: 10px;
+        gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: $lightGray;
+
+            &:hover {
+                color: white;
+            }
+        }
     }
 
     .btnNav {
