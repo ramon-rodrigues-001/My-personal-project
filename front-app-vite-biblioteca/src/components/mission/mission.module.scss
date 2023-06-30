@@ -1,6 +1,10 @@
 @import "../../styles/colors.module.scss";
 
 .mission {
+    background-image: linear-gradient(to bottom, #151515, #151515eb), url(/Cover2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,10 +29,9 @@
     }
 
     .descrition {
-        max-width: 1000px;
         font-size: 1.1em;
         font-weight: bold;
-        word-spacing: 2.5em;
+        word-spacing: 2vw;
         right: 0;
     }
 }
