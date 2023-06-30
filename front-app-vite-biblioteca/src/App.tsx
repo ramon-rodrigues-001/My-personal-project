@@ -16,6 +16,7 @@ function App() {
       </section>
       <section className="main">
         <Mission />
+        <Apresentation />
       </section>
     </Fragment>
   )
