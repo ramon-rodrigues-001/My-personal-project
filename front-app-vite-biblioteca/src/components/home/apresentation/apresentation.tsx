@@ -8,7 +8,7 @@ export default function Apresentation() {
             </p>
 
             <h1 className={styles.title}>
-                Tenha acesso aos melhores PDFs, <br /> E livros totalmente gratuito.
+                Tenha acesso aos melhores PDFs, E livros totalmente gratuito.
             </h1>
 
             <p className={styles.descrition}>

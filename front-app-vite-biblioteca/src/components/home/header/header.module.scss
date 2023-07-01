@@ -56,3 +56,21 @@
         }
     }
 }
+
+@media screen and (max-width: 890px) {
+    .h {
+        .logo {
+            width: 150px;
+        }
+        .list {
+            font-size: .9em;
+        }
+    }
+}
+@media screen and (max-width: 890px) {
+    .h {
+        .list {
+            display: none;
+        }
+    }
+}

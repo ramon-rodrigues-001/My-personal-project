@@ -1,0 +1,67 @@
+@import "../../styles/colors.module.scss";
+
+.sectionCards {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+
+    .subTitle {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $lightRed;
+        padding: 10px 0px 80px 0px;
+    }
+
+    .containerDeCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px 30px;
+
+        .cards {
+            color: $lightGray;
+            font-weight: bold;
+            border: solid 1px white;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            border-radius: 10px;
+            transition: .3s;
+
+            img {
+                transition: .3s;
+                height: 200px;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.508);
+                border: solid 2px rgb(255, 255, 255);
+            }
+
+            .cardTitle {
+                padding: 10px 0px;
+                font-size: 1.5em;
+                transition: .3s;
+            }
+
+            &:hover {
+                img {
+                    scale: 1.02;
+                }
+                .cardTitle {
+                    padding: 15px;
+                    font-size: 1.9em;
+                    color: $lightRed;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .sectionCards {
+        .containerDeCards {
+            grid-template-columns: 1fr;
+        }
+    }
+}

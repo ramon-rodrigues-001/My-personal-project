@@ -18,6 +18,7 @@
 
     .title {
         font-size: 3em;
+        max-width: 800px;
         padding: 10px 0px 15px 0px;
     }
 
@@ -54,6 +55,25 @@
                 border-radius: 10px;
                 box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.305);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .apresentation {
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 406px) {
+    .apresentation {
+        // .title {
+        //     font-size:1.7em;
+        // }
+        .descrition {
+            font-size: 1em;
         }
     }
 }

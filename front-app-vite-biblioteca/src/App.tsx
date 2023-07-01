@@ -4,6 +4,7 @@ import "./styles/globals.scss"
 import Header from "./components/home/header/header"
 import Apresentation from "./components/home/apresentation/apresentation"
 import Mission from "./components/mission/mission"
+import Cards from "./components/cards/cards"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
       </section>
       <section className="main">
         <Mission />
-        <Apresentation />
+        <Cards />
       </section>
     </Fragment>
   )
