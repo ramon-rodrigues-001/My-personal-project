@@ -2,7 +2,7 @@
 
 
 .sectionAccordion {
-    background-color: rgb(63, 63, 63);
+    background-color: #252424;
     color: $lightGray;
     display: flex;
     flex-direction: column;
@@ -49,12 +49,14 @@
 
             .accordionContentOff {
                 overflow: hidden;
-                height: 0;
+                height: 0px;
                 transition: all .5s ease;
             }
-            .accordionContentOn {
-                transition: all .5s ease;
-            }
+            // .accordionContentOn {
+            //     height: 50px;
+            //     transition: all .5s ease;
+            //     padding: 20px;
+            // }
         
             &:hover {
                 scale: 1.02;

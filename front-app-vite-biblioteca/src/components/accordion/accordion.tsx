@@ -1,20 +1,11 @@
-import styles from "./accordion.module.scss"
+import styles from "./accordion.module.scss";
 
 export default function Accordion() {
 
-    // const accordionItem = document.querySelectorAll('.accordionIten')
-    
-    // accordionItem.forEach(item => {
-    //     const accordionHeaderItem = item.querySelector('.accordionHeader')
-    //     accordionHeaderItem?.addEventListener('click', () => {
-    //         alert('hello')
-    //     })
-    // })
-
-    function active() {
+    function active(content: string) {
         alert('hello')
-        const accordionContent = document.querySelector('.accordionContentOff')
-        accordionContent.classList.toggle("accordionContentOff");
+        const accordionContent = document.querySelector(`#${content}`)
+        accordionContent.classList.toggle(".accordionContentOff");
         accordionContent.classList.toggle("accordionContentOn");
     }
 
@@ -28,7 +19,7 @@ export default function Accordion() {
             
             <div className={styles.content}>
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader} onClick={active}>
+                    <div className={styles.accordionHeader} onClick={() => {active("content-1")}}>
                         <span>
                             ITEM _ 1
                         </span>
@@ -36,7 +27,7 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContentOff}>
+                    <div className={styles.accordionContentOff} id="content-1">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
@@ -45,7 +36,7 @@ export default function Accordion() {
 
 
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader} onClick={active}>
+                    <div className={styles.accordionHeader} onClick={() => {active("content-2")}}>
                         <span>
                             ITEM _ 2
                         </span>
@@ -53,7 +44,7 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContentOff}>
+                    <div className={styles.accordionContentOff} id="content-2">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
@@ -62,7 +53,7 @@ export default function Accordion() {
 
 
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader} onClick={active}>
+                    <div className={styles.accordionHeader} onClick={() => {active("content-3")}}>
                         <span>
                             ITEM _ 3
                         </span>
@@ -70,7 +61,41 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContentOff}>
+                    <div className={styles.accordionContentOff} id="content-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div className={styles.accordionIten}>
+                    <div className={styles.accordionHeader} onClick={() => {active("content-3")}}>
+                        <span>
+                            ITEM _ 3
+                        </span>
+                        <div className={styles.icon}>
+                            +
+                        </div>
+                    </div>
+                    <div className={styles.accordionContentOff} id="content-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div className={styles.accordionIten}>
+                    <div className={styles.accordionHeader} onClick={() => {active("content-3")}}>
+                        <span>
+                            ITEM _ 3
+                        </span>
+                        <div className={styles.icon}>
+                            +
+                        </div>
+                    </div>
+                    <div className={styles.accordionContentOff} id="content-3">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
