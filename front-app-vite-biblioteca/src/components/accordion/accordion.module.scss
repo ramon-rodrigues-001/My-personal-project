@@ -47,9 +47,12 @@
                 }
             }
 
-            .accordionContent {
+            .accordionContentOff {
                 overflow: hidden;
                 height: 0;
+                transition: all .5s ease;
+            }
+            .accordionContentOn {
                 transition: all .5s ease;
             }
         

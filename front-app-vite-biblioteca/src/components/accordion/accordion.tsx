@@ -1,18 +1,23 @@
 import styles from "./accordion.module.scss"
 
-
-const active = () => {
-    const accordionItem = document.querySelectorAll('.accordionIten')
-    
-    accordionItem.forEach(item => {
-        const accordionHeaderItem = item.querySelector()
-    })
-}
-
-
-
-
 export default function Accordion() {
+
+    // const accordionItem = document.querySelectorAll('.accordionIten')
+    
+    // accordionItem.forEach(item => {
+    //     const accordionHeaderItem = item.querySelector('.accordionHeader')
+    //     accordionHeaderItem?.addEventListener('click', () => {
+    //         alert('hello')
+    //     })
+    // })
+
+    function active() {
+        alert('hello')
+        const accordionContent = document.querySelector('.accordionContentOff')
+        accordionContent.classList.toggle("accordionContentOff");
+        accordionContent.classList.toggle("accordionContentOn");
+    }
+
     return (
         <section className={styles.sectionAccordion}>
 
@@ -23,7 +28,7 @@ export default function Accordion() {
             
             <div className={styles.content}>
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader}>
+                    <div className={styles.accordionHeader} onClick={active}>
                         <span>
                             ITEM _ 1
                         </span>
@@ -31,7 +36,7 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContent}>
+                    <div className={styles.accordionContentOff}>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
@@ -40,7 +45,7 @@ export default function Accordion() {
 
 
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader}>
+                    <div className={styles.accordionHeader} onClick={active}>
                         <span>
                             ITEM _ 2
                         </span>
@@ -48,7 +53,7 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContent}>
+                    <div className={styles.accordionContentOff}>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
@@ -57,7 +62,7 @@ export default function Accordion() {
 
 
                 <div className={styles.accordionIten}>
-                    <div className={styles.accordionHeader}>
+                    <div className={styles.accordionHeader} onClick={active}>
                         <span>
                             ITEM _ 3
                         </span>
@@ -65,7 +70,7 @@ export default function Accordion() {
                             +
                         </div>
                     </div>
-                    <div className={styles.accordionContent}>
+                    <div className={styles.accordionContentOff}>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                         </p>
