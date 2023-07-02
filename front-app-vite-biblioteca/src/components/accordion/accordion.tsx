@@ -1,10 +1,25 @@
 import styles from "./accordion.module.scss"
 
+
+const active = () => {
+    const accordionItem = document.querySelectorAll('.accordionIten')
+    
+    accordionItem.forEach(item => {
+        const accordionHeaderItem = item.querySelector()
+    })
+}
+
+
+
+
 export default function Accordion() {
     return (
         <section className={styles.sectionAccordion}>
 
             <p className={styles.subTitle}>DUVIDAS</p>
+            <h2 className={styles.title}>
+                Ficou com alguma dúvida?
+            </h2>
             
             <div className={styles.content}>
                 <div className={styles.accordionIten}>

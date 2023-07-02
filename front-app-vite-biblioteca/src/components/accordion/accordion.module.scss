@@ -3,10 +3,10 @@
 
 .sectionAccordion {
     background-color: rgb(63, 63, 63);
-    color: white;
+    color: $lightGray;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     
     margin: 0px auto;
@@ -20,13 +20,42 @@
         padding: 30px 0px 20px 0px;
     }
 
+    .title {
+        color: white;
+        padding: 10px 0px 15px 0px;
+        font-size: 2.5em;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
+        gap: 10px;
 
-    .accordionIten {
-        display: flex;
-    }
+        .accordionIten {
+            font-weight: bold;
+
+            .accordionHeader {
+                display: flex;
+                font-size: 1.1em;
+                justify-content: space-between;
+                cursor: pointer;
+                padding: 4px 0px;
+
+                .icon {
+                    font-size: 2em;
+                    font-weight: 100;
+                }
+            }
+
+            .accordionContent {
+                overflow: hidden;
+                height: 0;
+                transition: all .5s ease;
+            }
+        
+            &:hover {
+                scale: 1.02;
+            }
+        }
+    }  
 }
