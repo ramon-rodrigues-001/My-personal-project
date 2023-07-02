@@ -5,6 +5,7 @@ import Header from "./components/home/header/header"
 import Apresentation from "./components/home/apresentation/apresentation"
 import Mission from "./components/mission/mission"
 import Cards from "./components/cards/cards"
+import Accordion from "./components/accordion/accordion"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <section className="main">
         <Mission />
         <Cards />
+        <Accordion />
       </section>
     </Fragment>
   )
