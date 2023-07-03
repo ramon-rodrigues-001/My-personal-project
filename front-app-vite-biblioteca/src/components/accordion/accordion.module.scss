@@ -8,10 +8,15 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    
-    margin: 0px auto;
-    width: 90%;
-    max-width: 1000px;
+    padding: 0px 20px;
+    border-radius: 40% 40% 0px 0px;
+    margin-top: 20px;
+
+    .divAccordion {
+        margin: 0px auto;
+        width: 90%;
+        max-width: 1000px;
+    }
 
     .subTitle {
         font-size: 1.1em;
@@ -63,4 +68,9 @@
             }
         }
     }  
+}
+.accordionContentOff {
+    overflow: hidden;
+    height: 0px;
+    transition: all .5s ease;
 }
