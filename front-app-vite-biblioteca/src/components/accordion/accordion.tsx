@@ -41,8 +41,8 @@ export default function Accordion() {
                 <div className={styles.content}>
 
 
-                    <div className={styles.accordionIten}>
-                        <div className={styles.accordionHeader} onClick={() => {active("1")}}>
+                    <div className={styles.accordionIten} onClick={() => {active("1")}}>
+                        <div className={styles.accordionHeader} >
                             <span>
                                 Posso baixar os PDFs?
                             </span>
@@ -59,8 +59,8 @@ export default function Accordion() {
 
 
 
-                    <div className={styles.accordionIten}>
-                        <div className={styles.accordionHeader} onClick={() => {active("2")}}>
+                    <div className={styles.accordionIten} onClick={() => {active("2")}}>
+                        <div className={styles.accordionHeader}>
                             <span>
                                 Os livros tem direitos autorais? 
                             </span>
@@ -76,8 +76,8 @@ export default function Accordion() {
                     </div>
 
 
-                    <div className={styles.accordionIten}>
-                        <div className={styles.accordionHeader} onClick={() => {active("3")}}>
+                    <div className={styles.accordionIten} onClick={() => {active("3")}}>
+                        <div className={styles.accordionHeader}>
                             <span>
                                 É tudo gratuito? 
                             </span>
@@ -93,8 +93,8 @@ export default function Accordion() {
                     </div>
 
 
-                    <div className={styles.accordionIten}>
-                        <div className={styles.accordionHeader} onClick={() => {active("4")}}>
+                    <div className={styles.accordionIten} onClick={() => {active("4")}}>
+                        <div className={styles.accordionHeader}>
                             <span>
                                 Posso Vender os PDFs e livros?
                             </span>

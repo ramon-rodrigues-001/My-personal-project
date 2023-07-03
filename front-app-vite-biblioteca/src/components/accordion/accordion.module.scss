@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    padding: 0px 20px;
+    padding: 20px;
     border-radius: 40% 40% 0px 0px;
     margin-top: 20px;
 
@@ -50,10 +50,6 @@
                     font-size: 2em;
                     font-weight: 100;
                 }
-
-                &:hover {
-                    scale: 1.02;
-                }
             }
 
             .accordionContentOff {
@@ -62,10 +58,16 @@
                 transition: all .3s ease;
             }
             .accordionContentOn {
-                color: white;
+                color: rgb(255, 255, 255);
                 transition: all .5s ease;
-                padding: 5px 0px 20px 0px;
+                padding-bottom: 20px;
                 transition: all .3s ease;  
+            }
+
+
+            
+            &:hover {
+                scale: 1.015;
             }
         }
     }  
