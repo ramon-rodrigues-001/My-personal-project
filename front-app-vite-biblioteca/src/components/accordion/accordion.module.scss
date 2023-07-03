@@ -55,22 +55,18 @@
             .accordionContentOff {
                 overflow: hidden;
                 height: 0px;
-                transition: all .5s ease;
+                transition: all .3s ease;
             }
-            // .accordionContentOn {
-            //     height: 50px;
-            //     transition: all .5s ease;
-            //     padding: 20px;
-            // }
+            .accordionContentOn {
+                color: white;
+                transition: all .5s ease;
+                padding: 5px 0px 20px 0px;
+                transition: all .3s ease;  
+            }
         
             &:hover {
                 scale: 1.02;
             }
         }
     }  
-}
-.accordionContentOff {
-    overflow: hidden;
-    height: 0px;
-    transition: all .5s ease;
 }
