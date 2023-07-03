@@ -9,25 +9,25 @@ export default function Accordion() {
         accordionContent?.classList.toggle(styles.accordionContentOn)
 
         
+        const icone = document.querySelector(`#icon${content}`) as HTMLElement | null;
 
-        if (accordionContent?.classList.contains(styles.accordionContentOff)) 
-        {
-            const icone = document.querySelector(`#icon${content}`) as HTMLElement | null;
+        
+        if (accordionContent?.classList.contains(styles.accordionContentOff)) {
             if (icone) {
-                icone.style.transform = "rotate(360deg)"
-                icone.style.transition = ".3s"
-                icone.innerHTML = '+';
+            icone.style.transform = "rotate(0deg)";
+            icone.style.transition = ".3s";
+            icone.innerHTML = "+";
+            }
+        } else {
+            if (icone) {
+                icone.style.transform = "rotate(180deg)";
+                icone.style.transition = ".3s";
+                icone.innerHTML = "-";
             }
         }
-        else {
-            const icone = document.querySelector(`#icon${content}`) as HTMLElement | null;
-            if (icone) {
-                icone.style.transform = "rotate(360deg)"
-                icone.style.transition = ".3s"
-                icone.innerHTML = '-';
-            }
-        }
-      }
+    }
+
+
 
     return (
         <section className={styles.sectionAccordion}>
@@ -39,21 +39,26 @@ export default function Accordion() {
                 </h2>
                 
                 <div className={styles.content}>
+
+
                     <div className={styles.accordionIten}>
                         <div className={styles.accordionHeader} onClick={() => {active("1")}}>
                             <span>
                                 Posso baixar os PDFs?
                             </span>
                             <div className={styles.icon} id="icon1">
-                                +
+                                -
                             </div>
                         </div>
-                        <div className={styles.accordionContentOff} id="content-1">
+                        <div className={styles.accordionContentOn} id="content-1">
                             <p>
                                 Sim você tem permição para baixar ipsum dolor sit amet consectetur adipisicing elit. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                             </p>
                         </div>
                     </div>
+
+
+
                     <div className={styles.accordionIten}>
                         <div className={styles.accordionHeader} onClick={() => {active("2")}}>
                             <span>
@@ -64,6 +69,40 @@ export default function Accordion() {
                             </div>
                         </div>
                         <div className={styles.accordionContentOff} id="content-2">
+                            <p>
+                                Não, todos o livros e DPFs tiverem seus direitos autorais perdidos, agora e de direito do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className={styles.accordionIten}>
+                        <div className={styles.accordionHeader} onClick={() => {active("3")}}>
+                            <span>
+                                É tudo gratuito? 
+                            </span>
+                            <div className={styles.icon}  id="icon3">
+                                +
+                            </div>
+                        </div>
+                        <div className={styles.accordionContentOff} id="content-3">
+                            <p>
+                                Sim, todos o livros e DPFs são Gratuitos seus direitos autorais perdidos, agora e de direito do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className={styles.accordionIten}>
+                        <div className={styles.accordionHeader} onClick={() => {active("4")}}>
+                            <span>
+                                Posso Vender os PDFs e livros?
+                            </span>
+                            <div className={styles.icon}  id="icon4">
+                                +
+                            </div>
+                        </div>
+                        <div className={styles.accordionContentOff} id="content-4">
                             <p>
                                 Não, todos o livros e DPFs tiverem seus direitos autorais perdidos, agora e de direito do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
                             </p>
