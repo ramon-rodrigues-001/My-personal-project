@@ -6,7 +6,7 @@ import Apresentation from "./components/home/apresentation/apresentation"
 import Mission from "./components/mission/mission"
 import Cards from "./components/cards/cards"
 import Accordion from "./components/accordion/accordion"
-import Footer from "./components/footer/footer"
+import Footer from "./components/form/form"
 
 function App() {
   // const [count, setCount] = useState(0)

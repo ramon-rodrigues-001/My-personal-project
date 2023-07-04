@@ -1,0 +1,59 @@
+@import "../../styles/colors.module.scss";
+
+
+.form {
+    color: $lightGray;
+    font-weight: bold;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1000px;
+
+    .subTitle {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $lightRed;
+        padding: 30px 0px 20px 0px;
+    }
+
+    .div_name_email {
+        display: flex;
+        gap: 20px;
+
+        input {
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            margin: 5px 0px;
+            padding: 10px 20px;
+        }
+    }
+
+    .div_textarea {
+
+        textarea {
+            font-weight: bold;
+            margin: 5px 0px;
+            width: 98%;
+            max-width: 450px;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+    }
+
+    .submit {
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        border: solid 1.5px white;
+        margin: 30px 0px;
+        width: 240px;
+        padding: 10px 20px;
+
+        &:hover {
+            border: solid 1.5px $lightRed;
+            box-shadow: 1px 1px 5px $lightRed;
+            color: $lightRed;
+        }
+    }
+}
