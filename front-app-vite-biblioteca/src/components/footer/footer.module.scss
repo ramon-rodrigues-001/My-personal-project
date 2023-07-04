@@ -1,0 +1,119 @@
+@import "../../styles/colors.module.scss";
+
+.footer {
+    color: $lightGray;
+    font-weight: bold;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 50px 10px;
+
+    .subTitle {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $lightRed;
+        padding: 30px 0px 20px 0px;
+    }
+
+    .title {
+        color: white;
+        padding: 10px 0px 40px 0px;
+        font-size: 2.5em;
+    }
+
+    .logo {
+        width: 250px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+
+    .container_de_contatos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+    }
+
+    .form {    
+        .div_name_email {
+            display: flex;
+            gap: 20px;
+
+            input {
+                font-weight: bold;
+                border-radius: 10px;
+                border: none;
+                margin: 5px 0px;
+                padding: 10px 20px;
+            }
+        }
+    
+        .div_textarea {
+    
+            textarea {
+                font-weight: bold;
+                margin: 5px 0px;
+                width: 100%;
+                max-width: 450px;
+                border-radius: 10px;
+                padding: 10px 20px;
+            }
+        }
+    
+        .submit {
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: solid 1.5px white;
+            margin: 30px 0px;
+            width: 240px;
+            padding: 10px 20px;
+    
+            &:hover {
+                border: solid 1.5px $lightRed;
+                box-shadow: 1px 1px 5px $lightRed;
+                color: $lightRed;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 910px) {
+    .footer {
+        form {
+
+            .div_name_email {
+                display: inline-block;
+                width: 300px;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .footer {
+        // .container_de_contatos {
+        //     justify-content: center;
+        // }
+
+        form {
+            .div_name_email {
+                width: 90vw;
+
+                * {
+                    margin: 5px 0px;
+                }
+            }
+        }
+    }
+}

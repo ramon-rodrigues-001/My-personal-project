@@ -108,6 +108,41 @@ export default function Accordion() {
                             </p>
                         </div>
                     </div>
+
+
+
+                    <div className={styles.accordionIten} onClick={() => {active("5")}}>
+                        <div className={styles.accordionHeader}>
+                            <span>
+                                Os livros tem direitos autorais? 
+                            </span>
+                            <div className={styles.icon}  id="icon5">
+                                +
+                            </div>
+                        </div>
+                        <div className={styles.accordionContentOff} id="content-5">
+                            <p>
+                                Não, todos o livros e DPFs tiverem seus direitos autorais perdidos, agora e de direito do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className={styles.accordionIten} onClick={() => {active("6")}}>
+                        <div className={styles.accordionHeader}>
+                            <span>
+                                Os livros em PDF? 
+                            </span>
+                            <div className={styles.icon}  id="icon6">
+                                +
+                            </div>
+                        </div>
+                        <div className={styles.accordionContentOff} id="content-6">
+                            <p>
+                                Não, todos o livros e DPFs tiverem seus direitos autorais perdidos, agora e de direito do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
