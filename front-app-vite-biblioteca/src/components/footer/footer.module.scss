@@ -7,6 +7,7 @@
     width: 90%;
     max-width: 1000px;
     padding: 50px 10px;
+    min-height: 100vh;
 
     .subTitle {
         font-size: 1.1em;
@@ -85,14 +86,30 @@
 
 @media screen and (max-width: 910px) {
     .footer {
-        form {
+        padding: 20px 10px;
+        
+        .title {
+            padding-bottom: 10px;
+        }
 
+        .logo {
+            margin-bottom: 20px;
+        } 
+
+        form {
             .div_name_email {
                 display: inline-block;
                 width: 300px;
 
                 input {
-                    width: 100%;
+                    width: 95%;
+                }
+            }
+            .div_textarea {
+                
+    
+                textarea {
+                    width: 95%;
                 }
             }
         }
@@ -102,18 +119,26 @@
 
 @media screen and (max-width: 720px) {
     .footer {
-        // .container_de_contatos {
-        //     justify-content: center;
-        // }
-
         form {
             .div_name_email {
-                width: 90vw;
+                width: 85vw;
 
                 * {
                     margin: 5px 0px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .footer {
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .div_name_email {
+            font-size: .9em;
         }
     }
 }

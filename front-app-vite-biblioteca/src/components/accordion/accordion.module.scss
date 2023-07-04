@@ -72,3 +72,13 @@
         }
     }  
 }
+
+
+@media screen and (max-width: 606px) {
+    .sectionAccordion {
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+}

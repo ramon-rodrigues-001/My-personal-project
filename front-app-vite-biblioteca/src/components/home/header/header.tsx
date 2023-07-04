@@ -17,22 +17,22 @@ export default function Header() {
                 <div>
                     <ul className={styles.list}>
                         <li>
-                            <a href="/">
+                            <a href="#ancoraMissao">
                                 Missão
                             </a>
                         </li>
                         <li>
-                            <a href="/">
-                                Valores
+                            <a href="#ancoraCategorias">
+                                Categoria
                             </a>
                         </li>
                         <li>
-                            <a href="/">
-                                Projetos
+                            <a href="#ancoraDuvidas">
+                                Duvidas
                             </a>
                         </li>
                         <li>
-                            <a href="/">
+                            <a href="#ancoraContatos">
                                 Contatos
                             </a>
                         </li>

@@ -2,7 +2,7 @@ import styles from "./footer.module.scss";
 
 export default function Form() {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} id="ancoraContatos">
             <div>
                 <p className={styles.subTitle}>ME CONTATE</p>
                 <h2 className={styles.title}>Entre em contato comigo!</h2>

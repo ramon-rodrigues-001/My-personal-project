@@ -2,7 +2,7 @@ import styles from "./cards.module.scss"
 
 export default function Cards() {
     return (
-        <section className={styles.sectionCards}>
+        <section className={styles.sectionCards} id="ancoraCategorias">
             <p className={styles.subTitle}>OQUE VOCÊ VAI ACESSAR</p>
 
             <div className={styles.containerDeCards}>

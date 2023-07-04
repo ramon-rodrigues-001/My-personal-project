@@ -30,7 +30,7 @@ export default function Accordion() {
 
 
     return (
-        <section className={styles.sectionAccordion}>
+        <section className={styles.sectionAccordion} id="ancoraDuvidas">
 
             <div className={styles.divAccordion}>
                 <p className={styles.subTitle}>DUVIDAS</p>
