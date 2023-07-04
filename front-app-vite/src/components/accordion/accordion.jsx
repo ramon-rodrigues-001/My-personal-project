@@ -2,28 +2,25 @@ import styles from "./accordion.module.scss";
 
 export default function Accordion() {
 
-      function active(content: string) {
-        const accordionContent = document.querySelector(`#content-${content}`) as HTMLElement | null;
+      function active(content) {
+        const accordionContent = document.querySelector(`#content-${content}`);
 
         accordionContent?.classList.toggle(styles.accordionContentOff)
         accordionContent?.classList.toggle(styles.accordionContentOn)
 
         
-        const icone = document.querySelector(`#icon${content}`) as HTMLElement | null;
+        const icone = document.querySelector(`#icon${content}`);
 
         
         if (accordionContent?.classList.contains(styles.accordionContentOff)) {
-            if (icone) {
             icone.style.transform = "rotate(0deg)";
             icone.style.transition = ".3s";
             icone.innerHTML = "+";
-            }
+            
         } else {
-            if (icone) {
-                icone.style.transform = "rotate(180deg)";
-                icone.style.transition = ".3s";
-                icone.innerHTML = "-";
-            }
+            icone.style.transform = "rotate(180deg)";
+            icone.style.transition = ".3s";
+            icone.innerHTML = "-";
         }
     }
 
