@@ -1,0 +1,21 @@
+{
+  "dev.css": {
+    "file": "dev-d4515d92.css",
+    "src": "dev.css"
+  },
+  "dev.html": {
+    "assets": [
+      "Cover-c674376a.png"
+    ],
+    "css": [
+      "dev-d4515d92.css"
+    ],
+    "file": "main-c28a00ac.js",
+    "isEntry": true,
+    "src": "dev.html"
+  },
+  "public/Cover.png": {
+    "file": "Cover-c674376a.png",
+    "src": "public/Cover.png"
+  }
+}
