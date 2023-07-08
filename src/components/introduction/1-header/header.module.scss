@@ -74,3 +74,13 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .h {
+        gap: 10px;
+
+        .sectionLinks {
+            align-items: center;
+        }
+    }
+}

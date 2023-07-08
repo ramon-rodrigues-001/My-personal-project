@@ -38,13 +38,13 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <a href="/login">
+                <div className={styles.sectionLinks}>
+                    <a href="/deploy-my-project/login/">
                         <button className={styles.btnNav}>
                             Entrar
                         </button>
                     </a>
-                    <a href="/register">
+                    <a href="/deploy-my-project/register/">
                         <button className={styles.btnNav}>
                             Quero fazer parte
                         </button>

@@ -14,6 +14,12 @@
     background-size: cover;
     min-height: 100vh;
 }
+@media screen and (max-width: 500px) {
+    .sectionBackground {
+        min-height: 0vh;
+        padding-bottom: 30px;
+    }
+}
 
 .main {
     background-color: $darkGray;

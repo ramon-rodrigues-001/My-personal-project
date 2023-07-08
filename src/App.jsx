@@ -1,15 +1,13 @@
-// import { useState } from 'react'
-import { Fragment } from "react"
 import "./styles/globals.scss"
-import Header from "./components/home/header/header"
-import Apresentation from "./components/home/apresentation/apresentation"
-import Mission from "./components/mission/mission"
-import Cards from "./components/cards/cards"
-import Accordion from "./components/accordion/accordion"
-import Footer from "./components/footer/footer"
+import { Fragment } from "react"
+import Header from "./components/introduction/1-header/header"
+import Apresentation from "./components/introduction/2-home/home"
+import Mission from "./components/introduction/3-mission/mission"
+import Cards from "./components/introduction/4-cards/cards"
+import Accordion from "./components/introduction/5-accordion/accordion"
+import Footer from "./components/introduction/6-footer-contatos/footer"
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <Fragment>

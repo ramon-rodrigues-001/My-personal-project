@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ramon-rodrigues-001.github.io/My-personal-project/",
+  "homepage": "https://ramon-rodrigues-001.github.io/deploy-my-project/",
   "name": "biblioteca",
   "private": true,
   "version": "0.0.0",
@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-player": "^2.12.0",
+    "react-router-dom": "^6.14.1",
     "reactstrap": "^9.2.0",
     "sass": "^1.63.6",
     "swr": "^2.1.5"

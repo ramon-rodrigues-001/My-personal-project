@@ -1,4 +1,4 @@
-import styles from "./apresentation.module.scss";
+import styles from "./home.module.scss";
 
 export default function Apresentation() {
     return (

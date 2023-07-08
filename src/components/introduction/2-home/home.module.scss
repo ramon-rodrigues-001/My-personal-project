@@ -7,7 +7,7 @@
     color: white;
     width: 90%;
     max-width: 1000px;
-    min-height: 400px;
+    min-height: 70vh;
     margin: 0px auto;
 
     .subtitle {
@@ -62,16 +62,18 @@
 @media screen and (max-width: 606px) {
     .apresentation {
         .title {
-            font-size: 2em;
+            font-size: 2.7em;
             font-weight: bold;
         }
     }
 }
 @media screen and (max-width: 406px) {
     .apresentation {
-        // .title {
-        //     font-size:1.7em;
-        // }
+        min-height: 50vh;
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
         .descrition {
             font-size: 1em;
         }
