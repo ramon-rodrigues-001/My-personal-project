@@ -40,9 +40,19 @@ function Login() {
 
 
           <div className={styles.links}>
-            <a href="#" className={styles.link}>Não possuo uma conta</a>
-            <a href="#" className={styles.link}>Esqueci minha senha</a>
-            <a href="#" className={styles.examinador}>Entrar como Examinador</a>
+            <a href="/deploy-my-project/register" className={styles.link}>
+              Não possuo uma conta
+            </a>
+            <a href="#" className={styles.link}>
+              Esqueci minha senha
+            </a>
+            
+            <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+              Entrar
+            </a>
+            <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+              Entrar sem login
+            </a>
           </div>
         </div>
     </section>

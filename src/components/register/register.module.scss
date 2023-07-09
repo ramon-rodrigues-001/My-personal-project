@@ -1,0 +1,80 @@
+@import "../../styles/colors.module.scss";
+
+.sectionRegister {
+    background-image: linear-gradient(to bottom, #2a2828af, #151515), url(../../../public/Cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .cardRegister {
+        color: white;
+        backdrop-filter: blur(15px);
+        width: 90%;
+        max-width: 600px;
+        min-height: 450px;
+        border: solid 2px white;
+        border-radius: 10px;
+        padding: 20px;
+
+        h1 {
+            border-bottom: solid 2px white;
+            padding-right: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 70px;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 270px;
+            gap: 20px;
+
+            .label {
+                font-weight: bold;
+            }
+    
+            .input {
+                background-color: transparent;
+                font-size: 1.2em;
+                width: 100%;
+                border: none;
+                border-bottom: solid .5px white;
+                color: #747373;
+                padding: 5px 5px 1px 5px;
+                transition: 1s;
+
+                &:focus {
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            .Exibir {
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 5px;
+                text-align: end;
+            }
+        }
+
+
+        .volar {
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
