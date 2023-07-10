@@ -6,6 +6,7 @@ import IntroductionRoutes from './routes/Introduction.router.jsx'
 import LoginRoutes from './routes/Login.router.jsx'
 import RegisterRoutes from './routes/Register.router.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import VitrineRouter from './routes/Vitrine.router.jsx'
 const router = createBrowserRouter([
   {
     path: '/deploy-my-project/',
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/deploy-my-project/register',
     element: <RegisterRoutes />
+  },
+  {
+    path: '/deploy-my-project/vitrine',
+    element: <VitrineRouter />
   }
 ])
 

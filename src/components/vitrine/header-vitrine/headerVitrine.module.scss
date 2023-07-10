@@ -1,0 +1,47 @@
+@import "../../../styles/colors.module.scss";
+
+
+.headerVitrine {
+    background-color: rgb(44, 42, 42);
+    color: white;
+
+    .containerHeaderVitrine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+        width: 90%;
+        max-width: 1000px;
+        padding: 20px 0px;
+        transition: .8s;
+    }
+
+    .logoVitrine {
+        width: 180px;
+    } 
+    .logoNone {
+        display: none;
+    }
+
+    .listaHeaderVitrine {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 4vw;
+
+        li {
+            color: $lightGray;
+            font-weight: bold;
+        }
+    }
+
+    .cicleUser {
+        background-color: red;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        width: 45px;
+        height: 45px;
+        font-weight: bold;
+    }
+}
