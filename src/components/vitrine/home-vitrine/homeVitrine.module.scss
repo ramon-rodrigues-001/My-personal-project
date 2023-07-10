@@ -1,0 +1,74 @@
+@import "../../../styles/colors.module.scss";
+
+.apresentationVitrine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 70vh;
+    margin: 0px auto;
+
+    .subtitle {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $lightRed;
+    }
+
+    .title {
+        font-size: 3em;
+        max-width: 800px;
+        padding: 10px 0px 15px 0px;
+    }
+
+    .descrition {
+        color: $lightGray;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .linkBtnPlay {
+        text-decoration: none;
+        margin-top: 20px;
+
+        .buttonPlay {
+            color: $lightRed;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: transparent;
+            border: solid 1px $lightGray;
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
+            transition: .3s;
+
+            &:hover {
+                border-color: $lightRed;
+                border-radius: 10px;
+                box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.305);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .apresentation {
+        .title {
+            font-size: 2.7em;
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 406px) {
+    .apresentation {
+        min-height: 50vh;
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .descrition {
+            font-size: 1em;
+        }
+    }
+}
