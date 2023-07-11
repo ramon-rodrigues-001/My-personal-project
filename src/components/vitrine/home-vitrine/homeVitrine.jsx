@@ -2,7 +2,7 @@ import styles from './homeVitrine.module.scss'
 
 export default function HomeVitrine() {
     return (
-        <div className={styles.apresentationVitrine}>
+        <div className={styles.apresentationVitrine} id={styles.apresentationVitrine}>
             <p className={styles.subtitle}>
                 ACESSO ILIMITADO
             </p>
@@ -15,7 +15,7 @@ export default function HomeVitrine() {
                 Leia de ende estiver a qualquer momento,  <br />E continue evoluindo e aprendendo.
             </p>
 
-            <a href="/deploy-my-project/login/" className={styles.linkBtnPlay} id="ancoraMissao">
+            <a href="/deploy-my-project/" className={styles.linkBtnPlay}>
                 <button className={styles.buttonPlay}>
                     Voltar ou home
                 </button>

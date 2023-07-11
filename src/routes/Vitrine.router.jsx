@@ -6,7 +6,7 @@ import HomeVitrine from "../components/vitrine/home-vitrine/homeVitrine";
 export default function VitrineRouter() {
     return (
         <Fragment>
-            <section className="sectionBackground">
+            <section className="sectionBackground" id="sectionBackgroundVitrine">
                 <HeaderVitrine />
                 <HomeVitrine />
             </section>

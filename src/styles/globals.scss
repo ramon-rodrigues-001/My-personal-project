@@ -14,6 +14,9 @@
     background-size: cover;
     min-height: 100vh;
 }
+#sectionBackgroundVitrine {
+    background-image: linear-gradient(to bottom, #2a2828c7, #151515), url(/public/livraria.jpg);
+}
 @media screen and (max-width: 500px) {
     .sectionBackground {
         min-height: 0vh;

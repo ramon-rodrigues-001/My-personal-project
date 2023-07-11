@@ -32,6 +32,11 @@
         li {
             color: $lightGray;
             font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 
