@@ -1,0 +1,25 @@
+@import "../../../styles/colors.module.scss";
+
+.sectionLivros {
+    background-color: $darkGray;
+    min-height: 100vh;
+
+    .containerLivro {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(63, 62, 62);
+        width: 90vw;
+        max-width: 1000px;
+        margin: 0px auto;
+        min-height: 98vh;
+        padding: 10px;
+
+        .cardLivro {
+            background-color: rgb(41, 43, 43);
+            width: 270px;
+            height: 370px;
+        }
+    }
+}

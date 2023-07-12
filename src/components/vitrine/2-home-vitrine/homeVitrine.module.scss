@@ -3,12 +3,13 @@
 .apresentationVitrine {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     color: white;
     width: 90%;
     max-width: 1000px;
-    min-height: 70vh;
+    min-height: 100vh;
     margin: 0px auto;
+    padding-bottom: 100px;
 
     .subtitle {
         font-size: 1.1em;

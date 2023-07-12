@@ -1,7 +1,9 @@
 import "../styles/globals.scss"
 import { Fragment } from "react";
-import HeaderVitrine from "../components/vitrine/header-vitrine/headerVitrine";
-import HomeVitrine from "../components/vitrine/home-vitrine/homeVitrine";
+import HeaderVitrine from "../components/vitrine/1-header-vitrine/headerVitrine";
+import HomeVitrine from "../components/vitrine/2-home-vitrine/homeVitrine";
+import ContainerLivros from "../components/vitrine/3-container-livros/containerLivros";
+
 
 export default function VitrineRouter() {
     return (
@@ -10,6 +12,8 @@ export default function VitrineRouter() {
                 <HeaderVitrine />
                 <HomeVitrine />
             </section>
+            
+            <ContainerLivros />
         </Fragment>
     )
 }

@@ -36,21 +36,21 @@ function Login() {
             </div>
           </form>
 
-          <a href="/deploy-my-project/" className={styles.volar}>&lt; Voltar</a>
+          <a href="/" className={styles.volar}>&lt; Voltar</a>
 
 
           <div className={styles.links}>
-            <a href="/deploy-my-project/register" className={styles.link}>
+            <a href="/register" className={styles.link}>
               Não possuo uma conta
             </a>
             <a href="#" className={styles.link}>
               Esqueci minha senha
             </a>
             
-            <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+            <a href="/vitrine" className={styles.examinador}>
               Entrar
             </a>
-            <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+            <a href="/vitrine" className={styles.examinador}>
               Entrar sem login
             </a>
           </div>

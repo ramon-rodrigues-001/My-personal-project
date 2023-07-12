@@ -2,8 +2,10 @@
 
 
 .headerVitrine {
-    
-    
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 99vw;
     padding: 20px 0px;
 
     .containerHeaderVitrine {

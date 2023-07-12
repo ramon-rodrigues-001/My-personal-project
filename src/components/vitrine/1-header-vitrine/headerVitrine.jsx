@@ -1,4 +1,4 @@
-import styles from './headerVitrine.module.scss'
+import styles from './headerVitrine.module.scss';
 
 export default function HeaderVitrine() {
 

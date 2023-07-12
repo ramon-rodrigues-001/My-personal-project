@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 
 import IntroductionRoutes from './routes/Introduction.router.jsx'
 import LoginRoutes from './routes/Login.router.jsx'
@@ -9,19 +8,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import VitrineRouter from './routes/Vitrine.router.jsx'
 const router = createBrowserRouter([
   {
-    path: '/deploy-my-project/',
+    path: '/',
     element: <IntroductionRoutes />
   },
   {
-    path: '/deploy-my-project/login',
+    path: '/login',
     element: <LoginRoutes />
   },
   {
-    path: '/deploy-my-project/register',
+    path: '/register',
     element: <RegisterRoutes />
   },
   {
-    path: '/deploy-my-project/vitrine',
+    path: '/vitrine',
     element: <VitrineRouter />
   }
 ])

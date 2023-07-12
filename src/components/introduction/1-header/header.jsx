@@ -12,7 +12,7 @@ export default function Header() {
 
             <header className={styles.h}>
                 <h1>
-                    <img src="/logo-transparent.png" alt="" className={styles.logo}/>
+                    <img src="./logo-transparent.png" alt="" className={styles.logo}/>
                 </h1>
                 <div>
                     <ul className={styles.list}>
@@ -39,12 +39,12 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className={styles.sectionLinks}>
-                    <a href="/deploy-my-project/login/">
+                    <a href="/login/">
                         <button className={styles.btnNav}>
                             Entrar
                         </button>
                     </a>
-                    <a href="/deploy-my-project/register/">
+                    <a href="/register/">
                         <button className={styles.btnNav}>
                             Quero fazer parte
                         </button>

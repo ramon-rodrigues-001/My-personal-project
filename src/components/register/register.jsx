@@ -50,12 +50,12 @@ function Register() {
             </div>
           </form>
 
-          <a href="/deploy-my-project/" className={styles.volar}>&lt; Voltar</a>
+          <a href="/" className={styles.volar}>&lt; Voltar</a>
 
-          <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+          <a href="/vitrine" className={styles.examinador}>
               Confirmar
           </a>
-          <a href="/deploy-my-project/vitrine" className={styles.examinador}>
+          <a href="/vitrine" className={styles.examinador}>
               Entar sem login
           </a>
         </div>
