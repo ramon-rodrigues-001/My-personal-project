@@ -4,7 +4,7 @@ export default function HomeVitrine() {
     return (
         <div className={styles.apresentationVitrine} id={styles.apresentationVitrine}>
             <p className={styles.subtitle}>
-                ACESSO ILIMITADO
+                WELCOME
             </p>
 
             <h1 className={styles.title}>

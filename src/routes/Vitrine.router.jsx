@@ -6,6 +6,7 @@ import ContainerLivros from "../components/vitrine/3-container-livros/containerL
 
 
 export default function VitrineRouter() {
+
     return (
         <Fragment>
             <section className="sectionBackground" id="sectionBackgroundVitrine">
@@ -13,7 +14,9 @@ export default function VitrineRouter() {
                 <HomeVitrine />
             </section>
             
-            <ContainerLivros />
+            <ContainerLivros 
+                scroll={scroll}
+            />
         </Fragment>
     )
 }
