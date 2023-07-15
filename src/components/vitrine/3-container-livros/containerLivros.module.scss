@@ -7,15 +7,38 @@
     .containerLivro {
         // background-color: rgb(63, 62, 62);
         width: 90vw;
-        max-width: 1000px;
+        max-width: 950px;
         margin: 0px auto;
         min-height: 98vh;
+
+        .pesquisa {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+
+            .inputPesquisa {
+                background-color: transparent;
+                border: solid 2px white;
+                color: white;
+                font-size: 1.1em;
+                padding: 5px 10px;
+                font-weight: bold;
+                width: 270px;
+                border-radius: 10px;
+            }
+
+            .imgLupa {
+                width: 50px;
+                position: absolute;
+            }
+        }
+
 
         .espacoDeLivros {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             padding: 10px;
 
             .cardLivro {
@@ -26,20 +49,40 @@
             }
         }
 
+
         .paginatio {
             display: flex;
             list-style: none;
-            padding: 15px 0px 25px 0px;
+            justify-content: end;
+            padding: 15px 0px 30px 0px;
 
             .pageLink {
                 display: inline-block;
                 border: solid 2px white;
                 font-weight: bold;
                 color: white;
-                padding: 5px 13px;
+                padding: 8px 13px;
+                border-radius: 15px 0px;
 
                 &:hover {
                     background-color: $lightRed;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .sectionLivros {
+        .containerLivro {
+            .pesquisa {
+                .inputPesquisa {
+                    width: 100%;
+                }
+            }
+            .paginatio {
+                .pageLink {
+                    padding: 5px 11px;
                 }
             }
         }

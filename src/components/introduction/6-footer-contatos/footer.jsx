@@ -14,7 +14,7 @@ export default function Form() {
                     <h2>
                         <span>Cont</span>atos
                     </h2>
-                    <div>
+                    <div className={styles.redesSociais}>
                         <a href="https://www.linkedin.com/in/ramon-rodrigues-515a9b244/" target="_blank">
                             Linkedin
                         </a>
