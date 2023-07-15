@@ -5,22 +5,43 @@
     min-height: 100vh;
 
     .containerLivro {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         // background-color: rgb(63, 62, 62);
         width: 90vw;
         max-width: 1000px;
         margin: 0px auto;
         min-height: 98vh;
-        padding: 10px;
 
-        .cardLivro {
-            background-color: rgb(41, 43, 43);
-            border-radius: 10px;
-            width: 270px;
-            height: 370px;
+        .espacoDeLivros {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px;
+
+            .cardLivro {
+                background-color: rgb(41, 43, 43);
+                border-radius: 10px;
+                width: 270px;
+                height: 370px;
+            }
+        }
+
+        .paginatio {
+            display: flex;
+            list-style: none;
+            padding: 15px 0px 25px 0px;
+
+            .pageLink {
+                display: inline-block;
+                border: solid 2px white;
+                font-weight: bold;
+                color: white;
+                padding: 5px 13px;
+
+                &:hover {
+                    background-color: $lightRed;
+                }
+            }
         }
     }
 }
