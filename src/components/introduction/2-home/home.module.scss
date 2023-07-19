@@ -3,12 +3,13 @@
 .apresentation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     color: white;
     width: 90%;
     max-width: 1000px;
     min-height: 70vh;
     margin: 0px auto;
+    padding: 60px 0px;
 
     .subtitle {
         font-size: 1.1em;
@@ -69,13 +70,14 @@
 }
 @media screen and (max-width: 406px) {
     .apresentation {
-        min-height: 50vh;
-        .title {
-            font-size: 2em;
-            font-weight: bold;
-        }
-        .descrition {
-            font-size: 1em;
-        }
+        min-height: 60vh;
+
+        // .title {
+        //     font-size: 2em;
+        //     font-weight: bold;
+        // }
+        // .descrition {
+        //     font-size: 1em;
+        // }
     }
 }

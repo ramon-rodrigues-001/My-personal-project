@@ -8,7 +8,7 @@
     font-weight: bold;
 }
 
-.h {
+.headerIntrodution {
     background-color: transparent;
     color: white;
     display: flex;
@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 890px) {
-    .h {
+    .headerIntrodution {
         .list {
             display: none;
         }
@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width: 534px) {
-    .h {
+    .headerIntrodution {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;

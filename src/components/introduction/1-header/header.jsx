@@ -10,7 +10,7 @@ export default function Header() {
                     </p>
             </div>
 
-            <header className={styles.h}>
+            <header className={styles.headerIntrodution}>
                 <h1>
                     <img src="./logo-transparent.png" alt="" className={styles.logo}/>
                 </h1>
