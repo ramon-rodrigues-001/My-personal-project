@@ -53,4 +53,43 @@
         height: 45px;
         font-weight: bold;
     }
+
+    .menu {
+        display: none;
+        width: 45px;
+        height: 30px;
+
+        .traco {
+            background-color: white;
+            width: 45px;
+            height: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .headerVitrine {
+        .logoVitrine {
+            display: none;
+        } 
+    }
+}
+
+@media screen and (max-width: 440px) {   
+    .headerVitrine {
+        .containerHeaderVitrine {
+            padding: 0px 20px;
+        }
+        
+        .listaHeaderVitrine {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
 }

@@ -40,6 +40,12 @@ export default function HeaderVitrine(props) {
                 <div className={styles.cicleUser}>
                     RR
                 </div>
+
+                <div className={styles.menu}>
+                    <div className={styles.traco}></div>
+                    <div className={styles.traco}></div>
+                    <div className={styles.traco}></div>
+                </div>
             </div>
         </header>
     )
