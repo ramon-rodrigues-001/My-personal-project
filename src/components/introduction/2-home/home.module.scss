@@ -1,15 +1,15 @@
 @import "../../../styles/colors.module.scss";
 
 .apresentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
     color: white;
     width: 90%;
     max-width: 1000px;
-    min-height: 70vh;
-    margin: 0px auto;
-    padding: 60px 0px;
+    padding: 80px 0px;
 
     .subtitle {
         font-size: 1.1em;
@@ -18,7 +18,7 @@
     }
 
     .title {
-        font-size: 3em;
+        font-size: 2.8em;
         max-width: 800px;
         padding: 10px 0px 15px 0px;
     }
@@ -31,18 +31,18 @@
 
     .linkBtnPlay {
         text-decoration: none;
-        margin-top: 20px;
-
+        
         .buttonPlay {
             color: $lightRed;
             display: flex;
             align-items: center;
             gap: 10px;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.2em;
             background-color: transparent;
             border: solid 1px $lightGray;
-            padding: 8px 15px;
+            padding: 10px 30px;
+            margin-top: 20px;
             border-radius: 5px;
             box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
             transition: .3s;
@@ -70,12 +70,11 @@
 }
 @media screen and (max-width: 406px) {
     .apresentation {
-        min-height: 60vh;
 
-        // .title {
-        //     font-size: 2em;
-        //     font-weight: bold;
-        // }
+        .title {
+            font-size: 2.3em;
+            font-weight: bold;
+        }
         // .descrition {
         //     font-size: 1em;
         // }

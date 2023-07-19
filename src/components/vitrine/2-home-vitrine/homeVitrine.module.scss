@@ -31,7 +31,6 @@
 
     .linkBtnPlay {
         text-decoration: none;
-        margin-top: 20px;
 
         .buttonPlay {
             color: $lightRed;
@@ -39,7 +38,8 @@
             font-size: 1.1em;
             background-color: transparent;
             border: solid 1px $lightGray;
-            padding: 8px 15px;
+            padding: 10px 30px;
+            margin-top: 20px;
             border-radius: 5px;
             box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
             transition: .3s;
