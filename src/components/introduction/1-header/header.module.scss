@@ -44,15 +44,15 @@
         font-size: 1em;
         font-weight: bold;
         color: $lightGray;
-        border: solid 2px transparent;
+        border: solid 2px $lightRed;
         padding: 5px 20px;
         border-radius: 4px;
-        margin: 5px;
+        margin: 0px 13px 4px 0px;
         transition: .3s;
 
         &:hover {
-            border-color: $lightRed;
             color: white;
+            scale: 1.1;
             transition: .1s;
         }
     }
@@ -60,6 +60,8 @@
 
 @media screen and (max-width: 890px) {
     .headerIntrodution {
+        gap: 10px;
+        
         .list {
             display: none;
         }
@@ -73,7 +75,7 @@
         align-items: flex-start;
 
         .logo {
-            max-width: 80vw;
+            max-width: 66vw;
             margin: auto;
         }
 
@@ -81,12 +83,9 @@
             margin: 20px 20px 0px 0px;
         }
         .btnNav {
-            text-align: center;
-
-            
+            text-align: center;    
             padding: 5px 10px;
             font-size: 1.15em;
-            margin: 0px;
         }
     }
 }

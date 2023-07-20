@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #sectionBackgroundVitrine {
     background-image: linear-gradient(to bottom, #2a2828c7, #151515), url(/public/livraria.jpg);
