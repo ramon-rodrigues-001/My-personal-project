@@ -51,11 +51,12 @@
             border-radius: 5px;
             padding: 3px 8px;
             text-decoration: none;
+            transition: .2s;
 
             &:hover {
+                border-color: red;
                 color: white;
-                scale: 1.1;
-                transition: .2s;
+                scale: 1.05;
             }
         }
     }
@@ -91,15 +92,15 @@
             color: $lightGray;
             font-weight: bold;
             border-radius: 10px;
-            border: solid 1.9px rgb(255, 0, 0);
+            border: solid 1.9px $lightRed;
             margin: 30px 0px;
             width: 240px;
             padding: 10px 20px;
             transition: .2s;
     
             &:hover {
-                border-color: $lightRed;
                 color: white;
+                border-color: red;
                 scale: 1.1;
             }
         }

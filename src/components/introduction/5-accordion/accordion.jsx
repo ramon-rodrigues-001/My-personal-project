@@ -140,6 +140,22 @@ export default function Accordion() {
                             </p>
                         </div>
                     </div>
+
+                    <div className={styles.accordionIten} onClick={() => {active("7")}}>
+                        <div className={styles.accordionHeader}>
+                            <span>
+                                Quem somos na fila do pão? 
+                            </span>
+                            <div className={styles.icon}  id="icon7">
+                                +
+                            </div>
+                        </div>
+                        <div className={styles.accordionContentOff} id="content-7">
+                            <p>
+                                Um desenvolvedor web solo, e um sonho de criar algo grande "e ser contratado :)", este é um dos projetos que estou desenvolvendo ainda não tenho ideia de que isso vai dá de onde vou chegar com este projeto e qual vai ser a verdadeiro objetivo, alem de que meu maior problema é o banco de dados na qual não faço ideia de onde encontrar e como inplementar. do estado ipsum dolor. Aut nobis error est qui dolores dolor, ullam non dolorem quis. Minima officiis enim ea, unde odio consequatur magni fuga libero repudiandae.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

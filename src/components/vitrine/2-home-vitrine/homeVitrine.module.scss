@@ -30,6 +30,8 @@
     }
 
     .linkBtnPlay {
+        max-width: 200px;
+        padding-top: 20px;
         text-decoration: none;
 
         .buttonPlay {
@@ -39,7 +41,6 @@
             background-color: transparent;
             border: solid 1px $lightGray;
             padding: 10px 30px;
-            margin-top: 20px;
             border-radius: 5px;
             box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.254);
             transition: .3s;
@@ -47,6 +48,7 @@
             &:hover {
                 border-color: $lightRed;
                 border-radius: 10px;
+                scale: 1.05;
                 box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.305);
             }
         }

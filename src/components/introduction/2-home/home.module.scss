@@ -1,11 +1,6 @@
 @import "../../../styles/colors.module.scss";
 
-// position: absolute;
-    // bottom: 0px;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // margin-top: 500px;
-    // padding: 800px 0px 80px 0px;
+
 .apresentation {
     color: white;
     width: 90%;
@@ -13,6 +8,7 @@
     margin: auto;
     margin-top: auto;
     padding: 50px 0px 80px 0px;
+    border-radius: 40px;
 
     .subtitle {
         font-size: 1.1em;
@@ -34,6 +30,9 @@
 
     .linkBtnPlay {
         text-decoration: none;
+        display: inline;
+        // max-width: 200px;
+        width: 200px;
 
         .buttonPlay {
             color: $lightRed;
@@ -43,7 +42,7 @@
             font-weight: bold;
             font-size: 1.2em;
             background-color: transparent;
-            border: solid 1px $lightGray;
+            border: solid 1.7px $lightGray;
             padding: 10px 30px;
             margin-top: 20px;
             border-radius: 5px;
@@ -57,6 +56,7 @@
             &:hover {
                 border-color: $lightRed;
                 border-radius: 10px;
+                scale: 1.05;
                 box-shadow: 1px 1px 100px 1px rgba(255, 255, 255, 0.305);
             }
         }
@@ -78,8 +78,5 @@
             font-size: 2.3em;
             font-weight: bold;
         }
-        // .descrition {
-        //     font-size: 1em;
-        // }
     }
 }
