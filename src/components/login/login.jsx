@@ -36,7 +36,6 @@ function Login() {
             </div>
           </form>
 
-          <a href="/" className={styles.volar}>&lt; Voltar</a> <br />
 
 
           <div className={styles.links}>

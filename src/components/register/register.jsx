@@ -50,7 +50,6 @@ function Register() {
             </div>
           </form>
 
-          <a href="/" className={styles.volar}>&lt; Voltar</a>
 
           <a href="/vitrine" className={styles.examinador}>
               Confirmar
@@ -58,6 +57,8 @@ function Register() {
           <a href="/vitrine" className={styles.examinador}>
               Entar sem login
           </a>
+          
+          <a href="/login" className={styles.volar}>já possuo uma conta</a>
         </div>
     </section>
   )
