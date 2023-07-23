@@ -24,12 +24,12 @@ function Login() {
           <form action="#" className={styles.formulario}>
             <div>
               <label htmlFor="email" className={styles.label}>Email:</label> <br />
-              <input type="text" className={styles.input} placeholder='exemplo@gmail.com' id='email'/>
+              <input type="text" className={styles.input} placeholder='@gmail.com' id='email'/>
             </div>
 
             <div>
               <label htmlFor="senha" className={styles.label}>Senha:</label> <br />
-              <input type='password' className={styles.input} placeholder='User455454' id='senha'/>
+              <input type='password' className={styles.input} placeholder='12345' id='senha'/>
               <p onClick={exibirSenha} className={styles.Exibir} id='exibir'>
                 MOSTRAR SENHA
               </p>

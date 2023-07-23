@@ -33,17 +33,17 @@ function Register() {
 
             <div>
               <label htmlFor="email" className={styles.label}>Email: </label> <br />
-              <input type="text" placeholder='exemplo@gmail.com' className={styles.input} id='email'/>
+              <input type="text" placeholder='@gmail.com' className={styles.input} id='email'/>
             </div>
 
             <div>
               <label htmlFor="senha-1" className={styles.label}>Senha: </label> <br />
-              <input type="password" placeholder='User023' className={styles.input} id='senha-1'/>
+              <input type="password" placeholder='12345' className={styles.input} id='senha-1'/>
             </div>
 
             <div>
               <label htmlFor="senha-2" className={styles.label}>Comfirmar Senha: </label> <br />
-              <input type="password" placeholder='User023' className={styles.input} id='senha-2'/>
+              <input type="password" placeholder='12345' className={styles.input} id='senha-2'/>
               <p onClick={exibirSenha} className={styles.Exibir} id='exibir'>
                 MOSTRAR SENHA
               </p>
