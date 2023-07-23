@@ -58,7 +58,7 @@ function Register() {
               Entar sem login
           </a>
           
-          <a href="/login" className={styles.volar}>já possuo uma conta</a>
+          <a href="/login" className={styles.linkLogin}>já possuo uma conta</a>
         </div>
     </section>
   )

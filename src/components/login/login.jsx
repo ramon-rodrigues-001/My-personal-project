@@ -37,7 +37,6 @@ function Login() {
           </form>
 
 
-
           <div className={styles.links}>
             <a href="/vitrine" className={styles.examinador}>
               Entrar
