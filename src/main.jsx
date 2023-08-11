@@ -6,21 +6,23 @@ import LoginRoutes from './routes/Login.router.jsx'
 import RegisterRoutes from './routes/Register.router.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import VitrineRouter from './routes/Vitrine.router.jsx'
+
+
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/My-personal-project/',
     element: <IntroductionRoutes />
   },
   {
-    path: '/login',
+    path: '/My-personal-project/login',
     element: <LoginRoutes />
   },
   {
-    path: '/register',
+    path: '/My-personal-project/register',
     element: <RegisterRoutes />
   },
   {
-    path: '/vitrine',
+    path: '/My-personal-project/vitrine',
     element: <VitrineRouter />
   }
 ])
@@ -31,3 +33,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+

@@ -38,14 +38,14 @@ function Login() {
 
 
           <div className={styles.links}>
-            <a href="/vitrine" className={styles.examinador}>
+            <a href="/My-personal-project/vitrine" className={styles.examinador}>
               Entrar
             </a>
-            <a href="/vitrine" className={styles.examinador}>
+            <a href="/My-personal-project/vitrine" className={styles.examinador}>
               Entrar sem login
             </a>
 
-            <a href="/register" className={styles.link}>
+            <a href="/My-personal-project/register" className={styles.link}>
               Não possuo uma conta
             </a>
             <a href="#" className={styles.link}>

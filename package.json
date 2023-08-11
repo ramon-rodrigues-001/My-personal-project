@@ -1,5 +1,5 @@
 {
-  "homepage": "https://deploy-my-project.netlify.app/",
+  "homepage": "https://ramon-rodrigues-001.github.io/My-personal-project/",
   "name": "biblioteca",
   "private": true,
   "version": "0.0.0",
@@ -16,6 +16,7 @@
     "aos": "^2.3.4",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
+    "history": "^5.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",

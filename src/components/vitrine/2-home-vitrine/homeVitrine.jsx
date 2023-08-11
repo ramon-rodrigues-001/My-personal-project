@@ -15,7 +15,7 @@ export default function HomeVitrine() {
                 Leia de ende estiver a qualquer momento,  <br />E continue evoluindo e aprendendo.
             </p>
 
-            <a href="/" className={styles.linkBtnPlay}>
+            <a href="/My-personal-project/" className={styles.linkBtnPlay}>
                 <button className={styles.buttonPlay}>
                     Voltar ou home
                 </button>

@@ -51,14 +51,14 @@ function Register() {
           </form>
 
 
-          <a href="/vitrine" className={styles.examinador}>
+          <a href="/My-personal-project/vitrine" className={styles.examinador}>
               Confirmar
           </a>
-          <a href="/vitrine" className={styles.examinador}>
+          <a href="/My-personal-project/vitrine" className={styles.examinador}>
               Entar sem login
           </a>
           
-          <a href="/login" className={styles.linkLogin}>já possuo uma conta</a>
+          <a href="/My-personal-project/login" className={styles.linkLogin}>já possuo uma conta</a>
         </div>
     </section>
   )

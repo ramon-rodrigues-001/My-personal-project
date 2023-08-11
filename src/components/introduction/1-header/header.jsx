@@ -39,12 +39,12 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className={styles.sectionLinks}>
-                    <a href="/login/">
+                    <a href="/My-personal-project/login/">
                         <button className={styles.btnNav}>
                             Entrar
                         </button>
                     </a>
-                    <a href="/register/">
+                    <a href="/My-personal-project/register/">
                         <button className={styles.btnNav}>
                             Quero fazer parte
                         </button>
