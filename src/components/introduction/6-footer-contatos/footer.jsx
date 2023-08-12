@@ -10,7 +10,7 @@ export default function Form() {
 
             <div className={styles.container_de_contatos}>
                 <div>
-                    <img src="/logo-transparent.png" alt="logo"  className={styles.logo}/>
+                    <img src="./logo-transparent.png" alt="logo"  className={styles.logo}/>
                     <h2>
                         <span>Cont</span>atos
                     </h2>

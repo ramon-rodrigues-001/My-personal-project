@@ -1,4 +1,5 @@
 import styles from './login.module.scss'
+import { Link } from "react-router-dom"
 
 function Login() {
 
@@ -19,7 +20,7 @@ function Login() {
   return (
     <section className={styles.sectionLogin}>
         <div className={styles.cardLogin}>
-          <h1>LOGIN <img src="/logo-transparent.png" alt="logo" className={styles.logo} /></h1>
+          <h1>LOGIN <img src="./logo-transparent.png" alt="logo" className={styles.logo} /></h1>
 
           <form action="#" className={styles.formulario}>
             <div>
@@ -38,19 +39,19 @@ function Login() {
 
 
           <div className={styles.links}>
-            <a href="/My-personal-project/vitrine" className={styles.examinador}>
+            <Link to="/vitrine" className={styles.examinador}>
               Entrar
-            </a>
-            <a href="/My-personal-project/vitrine" className={styles.examinador}>
+            </Link>
+            <Link to="/vitrine" className={styles.examinador}>
               Entrar sem login
-            </a>
+            </Link>
 
-            <a href="/My-personal-project/register" className={styles.link}>
+            <Link to="/register" className={styles.link}>
               Não possuo uma conta
-            </a>
-            <a href="#" className={styles.link}>
+            </Link>
+            <Link to="#" className={styles.link}>
               Esqueci minha senha
-            </a>
+            </Link>
           </div>
         </div>
     </section>

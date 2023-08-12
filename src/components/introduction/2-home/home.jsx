@@ -1,4 +1,5 @@
 import styles from "./home.module.scss";
+import { Link } from "react-router-dom"
 
 export default function Apresentation() {
     return (
@@ -15,13 +16,13 @@ export default function Apresentation() {
                 Leia de ende estiver a qualquer momento,  <br />E continue evoluindo e aprendendo.
             </p>
 
-            <a href="/My-personal-project/login/" className={styles.linkBtnPlay} id="ancoraMissao">
+            <Link to="/login/" className={styles.linkBtnPlay} id="ancoraMissao">
                 <button className={styles.buttonPlay}>
                     Acessar agora
-                    <img src="/buttonPlay.svg" alt="Img Play" 
+                    <img src="./buttonPlay.svg" alt="Img Play" 
                     className={styles.imgPlay}/>
                 </button>
-            </a>
+            </Link>
         </div>
     )
 }

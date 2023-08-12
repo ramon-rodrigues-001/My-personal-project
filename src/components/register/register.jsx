@@ -1,4 +1,5 @@
 import styles from './register.module.scss'
+import { Link } from "react-router-dom"
 
 function Register() {
 
@@ -23,7 +24,7 @@ function Register() {
   return (
     <section className={styles.sectionRegister}>
         <div className={styles.cardRegister}>
-          <h1>REGISTER <img src="/logo-transparent.png" alt="logo" className={styles.logo} /></h1>
+          <h1>REGISTER <img src="./logo-transparent.png" alt="logo" className={styles.logo} /></h1>
 
           <form action="#" className={styles.formulario}>
             <div>
@@ -51,14 +52,14 @@ function Register() {
           </form>
 
 
-          <a href="/My-personal-project/vitrine" className={styles.examinador}>
+          <Link to="/vitrine" className={styles.examinador}>
               Confirmar
-          </a>
-          <a href="/My-personal-project/vitrine" className={styles.examinador}>
+          </Link>
+          <Link to="/vitrine" className={styles.examinador}>
               Entar sem login
-          </a>
+          </Link>
           
-          <a href="/My-personal-project/login" className={styles.linkLogin}>já possuo uma conta</a>
+          <Link to="/login" className={styles.linkLogin}>já possuo uma conta</Link>
         </div>
     </section>
   )

@@ -1,36 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import IntroductionRoutes from './routes/Introduction.router.jsx';
+import LoginRoutes from './routes/Login.router.jsx';
+import RegisterRoutes from './routes/Register.router.jsx';
+import VitrineRouter from './routes/Vitrine.router.jsx';
 
-import IntroductionRoutes from './routes/Introduction.router.jsx'
-import LoginRoutes from './routes/Login.router.jsx'
-import RegisterRoutes from './routes/Register.router.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import VitrineRouter from './routes/Vitrine.router.jsx'
+function App() {
+  return (
+    <BrowserRouter basename="/My-personal-project">
+      <Routes>
+        <Route path="/" element={<IntroductionRoutes />} />
+        <Route path="/login" element={<LoginRoutes />} />
+        <Route path="/register" element={<RegisterRoutes />} />
+        <Route path="/vitrine" element={<VitrineRouter />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-
-const router = createBrowserRouter([
-  {
-    path: '/My-personal-project/',
-    element: <IntroductionRoutes />
-  },
-  {
-    path: '/My-personal-project/login',
-    element: <LoginRoutes />
-  },
-  {
-    path: '/My-personal-project/register',
-    element: <RegisterRoutes />
-  },
-  {
-    path: '/My-personal-project/vitrine',
-    element: <VitrineRouter />
-  }
-])
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 

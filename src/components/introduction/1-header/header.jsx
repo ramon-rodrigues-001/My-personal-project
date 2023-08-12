@@ -1,4 +1,5 @@
 import styles from "./header.module.scss"
+import { Link } from "react-router-dom"
 import { Fragment } from "react"
 
 export default function Header() {
@@ -39,16 +40,16 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className={styles.sectionLinks}>
-                    <a href="/My-personal-project/login/">
+                    <Link to="/login/">
                         <button className={styles.btnNav}>
                             Entrar
                         </button>
-                    </a>
-                    <a href="/My-personal-project/register/">
+                    </Link>
+                    <Link to="/register/">
                         <button className={styles.btnNav}>
                             Quero fazer parte
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </header>
         </Fragment>

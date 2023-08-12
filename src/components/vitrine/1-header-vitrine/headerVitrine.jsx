@@ -29,7 +29,7 @@ export default function HeaderVitrine(props) {
     return (
         <header className={styles.headerVitrine} id='headerVitrine'>
             <div className={styles.containerHeaderVitrine}>
-                <img src="/logo-transparent.png" alt="logo" className={styles.logoVitrine} id='logoHeaderVitrine'/>
+                <img src="./logo-transparent.png" alt="logo" className={styles.logoVitrine} id='logoHeaderVitrine'/>
 
                 <ul className={styles.listaHeaderVitrine}>
                     <li>Por Topico</li>

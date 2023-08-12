@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './homeVitrine.module.scss'
 
 export default function HomeVitrine() {
@@ -15,11 +16,11 @@ export default function HomeVitrine() {
                 Leia de ende estiver a qualquer momento,  <br />E continue evoluindo e aprendendo.
             </p>
 
-            <a href="/My-personal-project/" className={styles.linkBtnPlay}>
+            <Link to="/" className={styles.linkBtnPlay}>
                 <button className={styles.buttonPlay}>
                     Voltar ou home
                 </button>
-            </a>
+            </Link>
         </div>
     )
 }
