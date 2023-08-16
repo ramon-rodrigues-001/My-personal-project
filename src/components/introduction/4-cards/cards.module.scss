@@ -3,7 +3,7 @@
 .sectionCards {
     width: 90%;
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 0px auto;
     padding-top: 35px;
 
     .subTitle {
@@ -16,7 +16,7 @@
     .containerDeCards {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 80px 40px;
+        gap: 90px 40px;
 
         .cards {
             color: $lightGray;

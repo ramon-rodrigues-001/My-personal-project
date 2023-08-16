@@ -71,22 +71,35 @@
                     width: 100%;
                     height: 80%;
                 }
-                .carrin {
+                .divCarrin {
+                    background-color: rgba(132, 147, 245, 0.337);
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 60px;
-                    z-index: 999;
                     opacity: 0;
                     transition: 1s;
+                    border-radius: 50%;
+
+                    .carrin {
+                        width: 40px;
+                        transform: rotateY(600deg);
+                        transition: 1s;
+                    }
                 }
+                
 
                 &:hover {
                     scale: 1.02;
-                }
-                &:hover .carrin {
-                    opacity: 1;
+
+                    .divCarrin {
+                        padding: 100%;
+                        opacity: 1;
+
+                        .carrin {
+                            transform: rotateY(0deg);
+                        }
+                    }
                 }
             }
         }

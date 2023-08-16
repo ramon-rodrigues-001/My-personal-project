@@ -13,7 +13,11 @@ export default function ContainerLivros() {
                 <div className={styles.espacoDeLivros}>
                     <div className={styles.cardLivro}>
                         <img src="https://lirp.cdn-website.com/4deba6da/dms3rep/multi/opt/fullsize-2018-01-09-18-Peca-Grafica-230330_470658_181301872_308451081-1e8eebeb-640w.jpg" alt="" className={styles.livro1}/>
-                        <img src="/carrinho-apagar.png" alt="" className={styles.carrin}/>
+
+                        <div className={styles.divCarrin}><img src="/carrinho-apagar.png" alt="" className={styles.carrin}/></div>
+                        
+
+
                         <h3>TECNOLOGIA O MOTO...</h3>
                         <div>
                             <h3 className={styles.del}><s>R$36,00</s></h3>

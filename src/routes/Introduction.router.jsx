@@ -16,7 +16,6 @@ function IntroductionRoutes() {
         <Apresentation />
       </section>
       <section className="main">
-        <Mission />
         <Cards />
         <Accordion />
         <Footer />
