@@ -24,8 +24,9 @@
         width: 180px;
     } 
     .logoNone {
-        display: none;
+        display: none; /* Outros estilos para a classe '.logoNone' em si */
     }
+    
 
     .listaHeaderVitrine {
         display: flex;

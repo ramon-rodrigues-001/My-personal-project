@@ -54,25 +54,12 @@
                 overflow: hidden;
                 transition: .3s;
 
-                h3 {
-                    text-align: center;
-                    font-weight: 400;
-                    padding-top: 5px;
-                }
-                .del {
-                    color: rgba(255, 255, 255, 0.225);
-                }
-                div {
-                    display: flex;
-                    justify-content: center;
-                    gap: 10px;
-                }
-                .livro1 {
+                .livros {
                     width: 100%;
                     height: 80%;
                 }
                 .divCarrin {
-                    background-color: rgba(132, 147, 245, 0.337);
+                    background-color: rgba(132, 147, 245, 0.343);
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -85,6 +72,22 @@
                         width: 40px;
                         transform: rotateY(600deg);
                         transition: 1s;
+                    }
+                }
+
+                h3 {
+                    text-align: center;
+                    font-weight: 400;
+                    padding-top: 5px;
+                }
+                
+                .divPrecos {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .del {
+                        color: rgba(255, 255, 255, 0.308);
                     }
                 }
                 

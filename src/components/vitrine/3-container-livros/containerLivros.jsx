@@ -12,16 +12,16 @@ export default function ContainerLivros() {
 
                 <div className={styles.espacoDeLivros}>
                     <div className={styles.cardLivro}>
-                        <img src="https://lirp.cdn-website.com/4deba6da/dms3rep/multi/opt/fullsize-2018-01-09-18-Peca-Grafica-230330_470658_181301872_308451081-1e8eebeb-640w.jpg" alt="" className={styles.livro1}/>
+                        <img src="https://lirp.cdn-website.com/4deba6da/dms3rep/multi/opt/fullsize-2018-01-09-18-Peca-Grafica-230330_470658_181301872_308451081-1e8eebeb-640w.jpg" alt="" className={styles.livros}/>
 
-                        <div className={styles.divCarrin}><img src="/carrinho-apagar.png" alt="" className={styles.carrin}/></div>
-                        
-
+                        <a href="/My-personal-project/livro">
+                            <div className={styles.divCarrin}><img src="/carrinho-apagar.png" alt="" className={styles.carrin}/></div>
+                        </a>
 
                         <h3>TECNOLOGIA O MOTO...</h3>
-                        <div>
-                            <h3 className={styles.del}><s>R$36,00</s></h3>
-                            <h3>R$10,00</h3>
+                        <div className={styles.divPrecos}>
+                            <h3 className={styles.del}><s>R$14,99</s></h3>
+                            <h3>R$3,99</h3>
                         </div>
                     </div>
                     <div className={styles.cardLivro}></div>
