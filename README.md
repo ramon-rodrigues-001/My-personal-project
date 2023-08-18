@@ -1,35 +1,44 @@
-# [Nome do Projeto]
+<h1 align="center">Livre Leitor</h1>
 
-Bem-vindo ao [Nome do Projeto]! Este é um breve guia para você entender o que é este projeto e como utilizá-lo.
+<p align="center">
+  <img src="https://ramon-rodrigues-001.github.io/Portfolio/public/personal-project.png" alt="Logo do Projeto" width="100%">
+</p>
 
-## Descrição
+<p align="center">Link para ver o site rodando em uma servidor.</p>
+<h3 align="center"><a href="https://livre-leitor.netlify.app/">livre-leitor.netlify.app/</a></h3>
+<hr>
 
-[Nome do Projeto] é um projeto que se concentra em [descreva brevemente o objetivo do projeto]. Ele foi desenvolvido usando [tecnologias/frameworks utilizados]. Este projeto visa [explicar os principais objetivos ou problemas que o projeto aborda].
+## 📖 Descrição
 
-## Como Usar
+Este é o projeto mais grandioso que já empreendi, representando também a maior fonte de aprendizado e aprimoramento das minhas habilidades. Trata-se de um website dedicado a disponibilizar gratuitamente livros em formato PDF. Ele foi desenvolvido utilizando <img alt="ramon-Js" height="20" width="20" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
+  <img alt="ramon-HTML" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img alt="ramon-CSS" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img alt="ramon-Sass" height="20" width="20" src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg">
+  <img alt="ramon-Sass" height="20" width="20" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg">
+  <img alt="ramon-Python" height="20" width="20"       
+  src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg">
+  <img alt="ramon-Sass" height="20" width="20" 
+  src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-plain.svg">. O projeto visa propocionar um biblioteca digital reunindo diversos livros e apresentando em uma prataforma bonita e intuitiva.
+  <hr>
 
-Siga estas etapas para começar a usar o [Nome do Projeto]:
+## 🚀 Como Usar
 
-1. Faça o clone deste repositório para o seu computador.
-2. Navegue até o diretório onde você clonou o repositório.
-3. Execute o comando [comando necessário para inicializar o projeto].
-4. Abra o arquivo [arquivo principal do projeto] para começar a explorar o código.
+Siga estas etapas simples para começar a usar o [Nome do Projeto]:
+
+1. **Clone** este repositório para o seu computador.
+2. Navegue até o diretório do projeto: `cd nome-do-projeto`.
+3. Execute o comando: `[comando necessário para inicializar o projeto]`.
+4. Abra o arquivo: `[arquivo principal do projeto]` e comece a explorar o código.
 
 Certifique-se de ter [requisitos de software ou dependências] instalados antes de prosseguir.
+<hr>
 
-## Contribuição
+## 🤝 Contribuição
 
-Nós adoraríamos receber contribuições da sua parte! Se você quiser contribuir com o projeto, siga estas etapas:
+Eu adoraría receber contribuições da sua parte!
+<hr>
 
-1. Fork este repositório.
-2. Crie um branch para sua feature (`git checkout -b nova-feature`).
-3. Faça suas alterações e commit (`git commit -m 'Adicionar nova feature'`).
-4. Faça push para o branch (`git push origin nova-feature`).
-5. Abra um pull request explicando suas alterações.
+## 📞 Contato
 
-## Contato
-
-Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontrar em [seu email ou plataforma de contato preferida].
-
-Agradecemos muito pelo seu interesse em [Nome do Projeto]!
-
+Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me encontrar em ramon.rodrigues.dev@gmail.com.
+Agradeço muito pelo seu interesse no Livre Leitor!
