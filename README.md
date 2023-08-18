@@ -24,14 +24,15 @@ Este é o projeto mais grandioso que já empreendi, representando também a maio
 
 ## 🚀 Como Usar
 
-Siga estas etapas simples para começar a usar o [Nome do Projeto]:
+Para começar a usar o projeto, siga estas etapas simples. todo mundo conseque fica com preguiça não kkkk:
 
-1. **Clone** este repositório para o seu computador.
-2. Navegue até o diretório do projeto: `cd nome-do-projeto`.
-3. Execute o comando: `[comando necessário para inicializar o projeto]`.
-4. Abra o arquivo: `[arquivo principal do projeto]` e comece a explorar o código.
-
-Certifique-se de ter [requisitos de software ou dependências] instalados antes de prosseguir.
+1. Faça o download deste projeto clicando no botão verde "Code" nesta página e selecionando "Download ZIP".
+2. Extraia o arquivo ZIP em uma pasta no seu computador.
+3. Navegue até o diretório onde você extraiu os arquivos `cd /My-personal-project-main(1)/My-personal-project-main/`.
+4. Abra o arquivo `[My-personal-project-main]` em um editor de texto como o Visual Studio Code ou parecido 
+5. Agora você pode explorar o código, fazer modificações ou executar o projeto de acordo com a documentação.
+6. Certifique-se de atender a quaisquer [requisitos de software ou dependências] necessários antes de prosseguir. para isso basta rodar o comando dentro do terminal do editor de texto `npm install`
+7. caso queira ver o site em rodando execute no terminal o comando `npm run dev`
 <hr>
 
 ## 🤝 Contribuição
