@@ -1,3 +1,4 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=100&section=header"/>
 <h1 align="center">Livre Leitor</h1>
 
 <p align="center">
@@ -42,3 +43,5 @@ Eu adoraría receber contribuições da sua parte!
 
 Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me encontrar em ramon.rodrigues.dev@gmail.com.
 Agradeço muito pelo seu interesse no Livre Leitor!
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=100&section=footer"/>
