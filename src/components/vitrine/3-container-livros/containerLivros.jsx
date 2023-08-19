@@ -20,8 +20,8 @@ export default function ContainerLivros() {
 
                         <h3>TECNOLOGIA O MOTO...</h3>
                         <div className={styles.divPrecos}>
-                            <h3 className={styles.del}><s>R$14,99</s></h3>
-                            <h3>R$3,99</h3>
+                            <h3 className={styles.del}><s>R$4,99</s></h3>
+                            <h3>R$1,90</h3>
                         </div>
                     </div>
                     <div className={styles.cardLivro}></div>

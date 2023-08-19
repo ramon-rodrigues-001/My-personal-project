@@ -1,29 +1,55 @@
-.livro {
+@import "../../styles/colors.module.scss";
+
+
+.containerLivro {
     background: #202020 url(/public/CoverLivro.jpg) center center no-repeat;
     background-size: cover;
     color: white;
     font-weight: bold;
     min-height: 105vh;
+}
+.livro {
+    
+    max-width: 900px;
+    width: 90vw;
+    margin: auto;
+    
 
     .divImgLivro {
         display: flex;
         gap: 30px;
         padding: 180px 10px 50px 10px; 
-        max-width: 900px;
-        width: 90vw;
-        margin: auto;
 
-        button {
-            background-color: transparent;
+        .preco {
+            padding: 15px 0px;
+            font-size: 1.3em;
+        }
+        .divPreco {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 30px 0px;
+
+            #quantidade {
+                font-size: 1em;
+                background-color: transparent;
+                padding: 2px 5px;
+                border: solid 1px white;
+                color: white;
+                width: 70px;
+            }
+        }
+        
+
+        button { 
             color: white;
-            font-weight: bold;
-            border-radius: 20px;
-            border: solid 2px white;
-            padding: 10px 40px;
+            border: solid 2px rgb(255, 255, 255);
+            width: 80%;
+            font-size: 1.3em;
 
             &:hover {
-                scale: 1.1;
-                transition: .5s;
+                border-color: blue;
+                scale: 1.05;
             }
         }
 
@@ -31,6 +57,37 @@
             width: 95%;
             max-width: 350px;
             border-radius: 30px;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        border: solid 2px white;
+        padding: 10px 40px;
+        margin-bottom: 20px;
+        
+        transition: .3s;
+
+        &:hover {
+            border-color: $lightRed;
+            border-radius: 13px;
+            scale: 1.1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 870px) {
+    .livro {
+        .divImgLivro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 180px 10px 50px 10px; 
         }
     }
 }
