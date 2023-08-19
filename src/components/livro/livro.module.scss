@@ -1,16 +1,31 @@
 .livro {
     background: #202020 url(/public/CoverLivro.jpg) center center no-repeat;
     background-size: cover;
-    height: 105vh;
-    position: relative;
+    color: white;
+    font-weight: bold;
+    min-height: 105vh;
 
     .divImgLivro {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 30px;
+        padding: 180px 10px 50px 10px; 
         max-width: 900px;
         width: 90vw;
+        margin: auto;
+
+        button {
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            border: solid 2px white;
+            padding: 10px 40px;
+
+            &:hover {
+                scale: 1.1;
+                transition: .5s;
+            }
+        }
 
         .imgLivro {
             width: 95%;
