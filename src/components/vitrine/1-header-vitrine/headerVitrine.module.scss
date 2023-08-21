@@ -71,6 +71,9 @@
 @media screen and (max-width: 600px) {
     
     .headerVitrine {
+        #linkLogo {
+            display: none;
+        }
         .logoVitrine {
             display: none;
         } 

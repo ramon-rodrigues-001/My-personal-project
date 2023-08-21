@@ -10,7 +10,7 @@ export default function HeaderVitrine(props) {
         let rolagem = (scroll / altura) * 100
 
         const logo = document.querySelector('#logoHeaderVitrine')
-        const linkLogo = document.querySelector('#linkLogo')
+        const linkLogo = document.querySelector(styles.linkLogo)
         const header = document.querySelector('#headerVitrine')
 
         if (rolagem <= '1') {
@@ -32,7 +32,7 @@ export default function HeaderVitrine(props) {
     return (
         <header className={styles.headerVitrine} id='headerVitrine'>
             <div className={styles.containerHeaderVitrine}>
-                <a href="/My-personal-project/vitrine" id='linkLogo'>
+                <a href="/My-personal-project/vitrine" id={styles.linkLogo} className={styles.linkLogo}>
                     <img src="./logo-transparent.png" alt="logo" className={styles.logoVitrine} id='logoHeaderVitrine'/>
                 </a>
 

@@ -17,14 +17,17 @@
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 100%;
-        background-color: rgba(0, 0, 0, 0.941);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.974);
         border: solid 3px white; 
-        padding: 20px;
+        padding: 30px;
         z-index: 999; 
+        
+        overflow-y: auto;
 
         .container {
             display: flex;
+            gap: 10px;
             flex-direction: column;
             max-width: 1000px;
             height: 100%;
@@ -47,6 +50,14 @@
                         align-items: center;
                     }
                 }
+
+                button {
+                    width: 80%;
+
+                    &:hover {
+                        scale: 1.04;
+                    }
+                }
             }
 
 
@@ -57,27 +68,6 @@
                 }
             }
         }
-        // .bodyModal {
-        //     // display: flex;
-        //     // justify-content: space-around;
-        //     // align-items: center;
-        //     min-height: 300px;
-
-        //     div {
-        //         width: 50%;
-        //         display: flex;
-        //         flex-direction: column;
-
-        //         &.divQRCODE {
-        //             align-items: center;
-        //         }
-        //     }
-
-        //     .qrCode {
-        //         width: 90%;
-        //         max-width: 300px;
-        //     }
-        // }
     }
     
 
@@ -88,7 +78,7 @@
 
         .preco {
             padding: 15px 0px;
-            font-size: 1.3em;
+            font-size: 1.4em;
         }
         .divPreco {
             display: flex;
@@ -108,13 +98,10 @@
         
 
         button { 
-            color: white;
-            border: solid 2px rgb(255, 255, 255);
             width: 80%;
-            font-size: 1.3em;
+            font-size: 1.2em;
 
             &:hover {
-                border-color: blue;
                 scale: 1.05;
             }
         }
