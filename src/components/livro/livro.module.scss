@@ -1,6 +1,5 @@
 @import "../../styles/colors.module.scss";
 
-
 .containerLivro {
     background: #202020 url(/public/CoverLivro.jpg) center center no-repeat;
     background-size: cover;
@@ -9,23 +8,42 @@
     min-height: 105vh;
 }
 .livro {
-    
     max-width: 900px;
     width: 90vw;
     margin: auto;
 
-    #modal {
+    .divModal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(46, 41, 41);
         max-width: 900px;
+        padding: 20px;
+        border: solid 3px white;
         width: 80%;
+        z-index: 999;
 
-        #headModel {
-            background-color: rgb(41, 36, 36);
-            border: solid 2px white;
-        }
-        #bodyModel {
-            background-color: black;
-            border: solid 5px white;
-            height: 500px;
+        .bodyModel {
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
+            min-height: 300px;
+
+            div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                &.divQRCODE {
+                    align-items: center;
+                }
+            }
+
+            .qrCode {
+                width: 90%;
+                max-width: 300px;
+            }
         }
     }
     
@@ -103,6 +121,16 @@
             align-items: center;
             gap: 30px;
             padding: 180px 10px 50px 10px; 
+        }
+
+        #modal {
+            #bodyModel {
+                flex-direction: column;
+
+                div {
+                    width: 100%;
+                }
+            }
         }
     }
 }
