@@ -13,38 +13,71 @@
     margin: auto;
 
     .divModal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgb(46, 41, 41);
-        max-width: 900px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0.941);
+        border: solid 3px white; 
         padding: 20px;
-        border: solid 3px white;
-        width: 80%;
-        z-index: 999;
+        z-index: 999; 
 
-        .bodyModel {
-            // display: flex;
-            // justify-content: space-around;
-            // align-items: center;
-            min-height: 300px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            height: 100%;
+            margin: auto;
+            font-weight: bold;
 
-            div {
-                width: 50%;
+            .bodyModal {
                 display: flex;
-                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                flex-grow: 1;
 
-                &.divQRCODE {
-                    align-items: center;
+                div {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    &.divQRCODE {
+                        align-items: center;
+                    }
                 }
             }
 
-            .qrCode {
-                width: 90%;
-                max-width: 300px;
+
+            .footerModal {
+                text-align: end;
+                button {
+                    width: 200px;
+                }
             }
         }
+        // .bodyModal {
+        //     // display: flex;
+        //     // justify-content: space-around;
+        //     // align-items: center;
+        //     min-height: 300px;
+
+        //     div {
+        //         width: 50%;
+        //         display: flex;
+        //         flex-direction: column;
+
+        //         &.divQRCODE {
+        //             align-items: center;
+        //         }
+        //     }
+
+        //     .qrCode {
+        //         width: 90%;
+        //         max-width: 300px;
+        //     }
+        // }
     }
     
 
@@ -123,12 +156,14 @@
             padding: 180px 10px 50px 10px; 
         }
 
-        #modal {
-            #bodyModel {
-                flex-direction: column;
-
-                div {
-                    width: 100%;
+        .divModal {
+            .container {
+                .bodyModal {
+                    flex-direction: column;
+    
+                    div {
+                        width: 100%;
+                    }
                 }
             }
         }

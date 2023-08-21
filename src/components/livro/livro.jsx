@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import styles from "./livro.module.scss"
 import HeaderVitrine from "../vitrine/1-header-vitrine/headerVitrine"
-// import { Modal } from "react-bootstrap";
-// import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../../../node_modules/bootstrap/dist/js/bootstrap";
 
 function Livro() {
 
-    // const [showModal, setShowModal] = useState(false);
+    // Exibir Modal
+    const [showModal, setShowModal] = useState(false);
+    const modelPagamento = document.querySelector('#modelPagamento')
+    const openModal = () => {
+        setShowModal(true);
+    };
+    const closeModal = () => {
+        setShowModal(false);
+    };
 
-    // const openModal = () => {
-    //   setShowModal(true);
-    // };
-  
-    // const closeModal = () => {
-    //   setShowModal(false);
-    // };
-
-
+    // Copiar chave Pix
+    const [copy, setCopy] = useState(false)
+    const copiaChave = () => {
+        setCopy(true)
+        setTimeout(() => setCopy(false), 1500);
+    }
 
 
     return(
@@ -37,7 +39,7 @@ function Livro() {
                         
                         <p className={styles.preco}>Preço: R$1,90</p> <br />
                     
-                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">COMPRAR</button>
+                        <button onClick={openModal}>COMPRAR</button>
                     </div>
                 </div>
 
@@ -48,27 +50,33 @@ function Livro() {
                 </a>
 
 
-
-
-                <div class={styles.divModal} id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div>
-                        <div class="modal-content">
-                            <div class={styles.modalHeader}>
-                                <h2 class="modal-title fs-5" id="staticBackdropLabel">Pagamento</h2> <hr />
+                {showModal && (
+                    <div className={styles.divModal} id="modelPagamento">
+                        <div className={styles.container}>
+                            <div className={styles.headModal}>
+                                <h1>Pagamento</h1> <hr />
                             </div>
-                            <div class={styles.bodyModel}>
-                                <div>
+                            <div className={styles.bodyModal}>
+                                <div className={styles.divQRCODE}>
+                                    <p><strong>Pagamento via pix:</strong></p> <br />
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210106102323/MyQRCode1-300x300.png" alt="" />
                                 </div>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quam, voluptas odio, qui fuga magnam laborum consequuntur sit unde eum impedit eos deleniti. Incidunt ipsum fuga beatae culpa odit consequatur.</p>
+                                    <h2><strong>Informações:</strong></h2> <br />
+                                    <p>Nome Destinatorio: Ramon Rodrigues Cordeiro <br />
+                                    Banco Destinatorio: Bradesco <br />
+                                    CPF Destinatorio: ***656***-00</p> <br />
+                                    
+                                    <h3>Chave Pix: Email</h3> <br />
+                                    <button onClick={copiaChave}>Copia chave</button>{copy && (<p>Chave email copiado?</p>)}
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">OK</button>
+                            <div className={styles.footerModal}>
+                                <button onClick={()=> closeModal()}>OK</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                )}
             </div>
         </div>
     )
