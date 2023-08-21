@@ -13,6 +13,21 @@
     max-width: 900px;
     width: 90vw;
     margin: auto;
+
+    #modal {
+        max-width: 900px;
+        width: 80%;
+
+        #headModel {
+            background-color: rgb(41, 36, 36);
+            border: solid 2px white;
+        }
+        #bodyModel {
+            background-color: black;
+            border: solid 5px white;
+            height: 500px;
+        }
+    }
     
 
     .divImgLivro {
