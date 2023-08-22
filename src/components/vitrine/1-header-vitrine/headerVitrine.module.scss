@@ -23,9 +23,6 @@
     .logoVitrine {
         width: 180px;
     } 
-    .logoNone {
-        display: none; /* Outros estilos para a classe '.logoNone' em si */
-    }
     
 
     .listaHeaderVitrine {
@@ -71,12 +68,9 @@
 @media screen and (max-width: 600px) {
     
     .headerVitrine {
-        #linkLogo {
+        .linkLogo {
             display: none;
         }
-        .logoVitrine {
-            display: none;
-        } 
     }
 }
 
