@@ -38,19 +38,34 @@ function Livro() {
           />
           <div>
             <h1>Tecnologia em evidência</h1>
+            
+
+            <table>
+              <tr>
+                  <th>Título: </th>
+                  <td>Tecnologia em Evidencia</td>
+              </tr>
+              <tr>
+                  <th>Autor: </th>
+                  <td>J.R.R. Tolkien</td>
+              </tr>
+              <tr>
+                  <th>Descrição: </th>
+                  <td>Uma base da programação e da informatica.</td>
+              </tr>
+              <tr>
+                  <th>Ano: </th>
+                  <td>2008</td>
+              </tr>
+            </table>
+
+
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt reiciendis minus nemo natus voluptatum culpa. Sit odio
-              asperiores aut, fuga, iste minima assumenda ut ad, veniam rerum
-              neque aliquid! Autem minus nemo natus voluptatum culpa. Sit odio
-              asperiores aut, fuga, iste minima assumenda ut ad, veniam rerum
-              neque aliquid! Autem.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              quisquam officia porro dolores.
-            </p>
-            <p className={styles.preco}>Preço: R$1,90</p>
+              Para quem quer dominar o mundo da ecnologia e criar Web sites incriveis
+            </p> 
+            <br />
+            <p className={styles.preco}>Preço: R$1,90</p> 
+            <hr /><br />
             <button onClick={openModal}>COMPRAR</button>
           </div>
         </div>

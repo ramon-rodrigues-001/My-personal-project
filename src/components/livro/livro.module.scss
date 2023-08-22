@@ -12,6 +12,16 @@
     width: 90vw;
     margin: auto;
 
+    table {
+        margin: 20px 0px;
+
+        th, td {
+            padding: 5px 10px;
+            text-align: left;
+            // border: 1px solid black;
+        }
+    }
+
     .divModal {
         position: fixed;
         top: 0;
