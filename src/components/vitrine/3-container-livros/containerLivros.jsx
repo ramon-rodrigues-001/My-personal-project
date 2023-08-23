@@ -14,7 +14,7 @@ export default function ContainerLivros() {
                     <div className={styles.cardLivro}>
                         <img src="https://lirp.cdn-website.com/4deba6da/dms3rep/multi/opt/fullsize-2018-01-09-18-Peca-Grafica-230330_470658_181301872_308451081-1e8eebeb-640w.jpg" alt="" className={styles.livros}/>
 
-                        <a href="/My-personal-project/livro">
+                        <a href="/livro">
                             <div className={styles.divCarrin}><img src="/carrinho-apagar.png" alt="" className={styles.carrin}/></div>
                         </a>
 

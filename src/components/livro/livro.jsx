@@ -70,7 +70,7 @@ function Livro() {
           </div>
         </div>
 
-        <a href="/My-personal-project/vitrine" className={styles.linkVoltar}>
+        <a href="/vitrine" className={styles.linkVoltar}>
           <button>&lt; VOLTAR</button>
         </a>
 

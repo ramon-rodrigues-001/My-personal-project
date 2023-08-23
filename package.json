@@ -1,13 +1,12 @@
 {
-  "homepage": "https://ramon-rodrigues-001.github.io/My-personal-project/",
+  "homepage": "https://livre-leitor.netlify.app/",
   "name": "biblioteca",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run copy404",
-    "copy404": "copy 404\\404.html dist\\404.html",
+    "build": "vite build ",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",

@@ -20,7 +20,7 @@ function Login() {
   return (
     <section className={styles.sectionLogin}>
         <div className={styles.cardLogin}>
-          <h1>LOGIN <img src="./logo-transparent.png" alt="logo" className={styles.logo} /></h1>
+          <h1>LOGIN <img src="/logo-transparent.png" alt="logo" className={styles.logo} /></h1>
 
           <form action="#" className={styles.formulario}>
             <div>

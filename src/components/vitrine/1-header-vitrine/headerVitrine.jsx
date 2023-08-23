@@ -31,7 +31,7 @@ export default function HeaderVitrine(props) {
         <header className={styles.headerVitrine} id='headerVitrine'>
             <div className={styles.containerHeaderVitrine}>
                 {linkLogo && (
-                    <a href="/My-personal-project/vitrine" className={styles.linkLogo}>
+                    <a href="/vitrine" className={styles.linkLogo}>
                         <img src="./logo-transparent.png" alt="logo" className={styles.logoVitrine}/>
                     </a>
                 )}

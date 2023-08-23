@@ -9,7 +9,7 @@ import LivroRoutes from './routes/Livro.router.jsx';
 
 function App() {
   return (
-    <BrowserRouter basename="/My-personal-project">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<IntroductionRoutes />} />
         <Route path="/login" element={<LoginRoutes />} />
