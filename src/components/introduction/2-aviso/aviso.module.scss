@@ -1,0 +1,37 @@
+@keyframes brilho {
+    0% {
+      box-shadow: 1px 1px 20px 5px rgba(255, 0, 0, 0.574);
+    }
+  
+    50% {
+        box-shadow: 0px 0px 0px 0px red;
+    }
+
+    100% {
+        
+      box-shadow: 1px 1px 20px 5px rgba(255, 0, 0, 0.385);
+    }
+}
+
+
+.avisoModal {
+    position: fixed;
+    background-color: white;
+    margin: 15px;
+    top: 0px;
+    right: 0px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    z-index: 999;
+
+    animation: brilho 1s linear infinite;
+
+    .cardHead {
+        display: flex;
+        gap: 20px;
+    }
+    .cardMain {
+        font-weight: bold;
+        padding: 20px;
+    }
+}

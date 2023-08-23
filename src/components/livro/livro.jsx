@@ -65,7 +65,7 @@ function Livro() {
             </p> 
             <br />
             <p className={styles.preco}>Preço: R$1,90</p> 
-            <hr /><br />
+            <br />
             <button onClick={openModal}>COMPRAR</button>
           </div>
         </div>
@@ -100,8 +100,8 @@ function Livro() {
                   <p>
                     Nome Destinatorio: Ramon Rodrigues Cordeiro <br />
                     Banco Destinatorio: Bradesco <br />
-                    CPF Destinatorio: ***656***-00
-                  </p>
+                    CPF Destinatorio: ***543***-00
+                  </p> <br />
                   <h3>Chave Pix: Email</h3>
                   <button onClick={copiaChave} id="btnCopy">
                     {copy ? "Copied!" : "Copiar Chave."}
