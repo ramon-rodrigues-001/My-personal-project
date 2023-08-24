@@ -26,9 +26,9 @@ export default function Aviso() {
                     <div className={styles.cardMain}>
                         <br />
                         <ol>
-                            <li>Por segurança não incira sua senha de email no login</li>
-                            <li>Este site ainda é uma demostração portanto, não pecisa de um registro para assesar o conteúdo</li>
-                            <li>O site ainda não contem um banco de dados portanto, talves não tenho o livro que esta procurando</li>
+                            <li>Por segurança não incira sua senha de email no login</li> <br />
+                            <li>Este site ainda é uma demostração portanto, não pecisa de um registro para assesar o conteúdo</li> <br />
+                            <li>O site ainda não contem um banco de dados portanto, talves não tenho o livro que esta procurando</li> <br />
                         </ol>
                     </div>
                 )}
